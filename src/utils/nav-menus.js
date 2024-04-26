@@ -1,6 +1,6 @@
 const navMenus = [
     {
-        mainMenu: "About Us",
+        mainMenu: "About",
         url: "/about-us",
         subMenu: []
     },
@@ -13,8 +13,13 @@ const navMenus = [
         </svg>
     },
     {
-        mainMenu: "Blog",
-        url: "/blog",
+        mainMenu: "Customer Reviews",
+        url: "/",
+        subMenu: []
+    },
+    {
+        mainMenu: "Blogs",
+        url: "/blogs",
         subMenu: []
     },
     {
@@ -26,7 +31,7 @@ const navMenus = [
         </svg>
     },
     {
-        mainMenu: "Contact Us",
+        mainMenu: "Contact",
         url: "/contact-us",
         subMenu: []
     },

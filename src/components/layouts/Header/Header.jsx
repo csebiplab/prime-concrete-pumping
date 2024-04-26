@@ -23,7 +23,7 @@ const Header = () => {
             />
           </Link>
           <div className="hidden lg:block">
-            <ul className="flex items-center gap-x-2 md:gap-x-5 xl:gap-x-10 2xl:gap-x-[75px]">
+            <ul className="flex items-center gap-x-3 md:gap-x-5 lg:gap-x-10 xl:gap-x-[50px]">
               {UtilsModule.navMenus.map(
                 ({ mainMenu, url, subMenu, svg = null }, index) => (
                   <li key={index}>
@@ -31,7 +31,7 @@ const Header = () => {
                       href={url}
                       className={`${
                         svg ? "flex items-center gap-x-1" : ""
-                      } !text-lg text-dark-100 font-bold`}
+                      } text-dark-100 font-normal !text-base`}
                     >
                       {mainMenu} {svg}
                     </Link>
@@ -46,14 +46,12 @@ const Header = () => {
                 src="/assets/images/phone-call.png"
                 width={24}
                 height={24}
-                alt="canada leaf"
+                alt="Phone us"
                 className="w-[24px] h-[24px]"
               />
-              <Link
-                href="/"
-                className="text-primary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
-              >
-                +1(647) 449 9512
+              <Link href="/" className="text-primary flex flex-col">
+                <span className="text-base">Quick Contact</span>
+                <span className="font-bold">647-449-9512</span>
               </Link>
             </div>
             <div className="block lg:hidden">
