@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FaMapMarkedAlt } from "react-icons/fa";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
@@ -123,8 +122,8 @@ const footerIcon = [
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M32.2101 2.15134C32.2101 3.11561 31.4489 3.82613 30.5861 3.82613C30.3643 3.83317 30.1433 3.79467 29.9369 3.713C29.7306 3.63133 29.5431 3.50822 29.3862 3.35128C29.2292 3.19433 29.1061 3.00688 29.0244 2.8005C28.9428 2.59412 28.9043 2.37319 28.9113 2.15134C28.9113 1.13633 29.6218 0.476562 30.5861 0.476562C31.4489 0.476562 32.1594 1.18708 32.2101 2.15134ZM30.1293 3.26787H29.7741V0.984072H30.6876C31.1951 0.984072 31.4489 1.18708 31.4489 1.64383C31.4489 2.04984 31.1951 2.25285 30.8398 2.3036L31.5504 3.26787H31.1444L30.5353 2.25285H30.1293V3.26787Z"
           fill="white"
         />
@@ -161,8 +160,8 @@ const footerIcon = [
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M65.6271 5.20171L64.9986 5.04458L62.3798 4.5732L61.1752 2.11155L60.8609 1.43066L60.5467 2.11155L59.2896 4.5732L56.6709 5.09696L56.0947 5.20171L56.5137 5.67309L58.3469 7.66336L57.9802 10.4916L57.8755 11.1725L58.504 10.8583L60.8609 9.60125L63.2178 10.8583L63.7939 11.1725L63.7416 10.4916L63.3226 7.66336L65.2081 5.67309L65.6271 5.14933V5.20171Z"
           fill="#F7941E"
         />
