@@ -1,6 +1,5 @@
 import React from "react";
 import HomeBanner from "./HomeBanner/HomeBanner";
-import PartnerNRatings from "./PartnerNRatings/PartnerNRatings";
 import AboutUs from "./AboutUs/AboutUs";
 import OurServices from "./OurServices/OurServices";
 import MaterialsNEquip from "./MaterialsNEquip/MaterialsNEquip";
@@ -23,14 +22,11 @@ const MainHomePageComponent = () => {
         <HomeBanner />
       </section>
 
-      {/*
-      <section>
-        <PartnerNRatings />
-      </section>
-
       <section>
         <AboutUs />
       </section>
+
+      {/*
 
       <section>
         <OurServices />

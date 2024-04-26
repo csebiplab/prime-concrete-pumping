@@ -2,50 +2,70 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
 import "./AboutUs.css";
+import CommonButton from "@/components/ui/CommonButton";
 
 const AboutUs = () => {
   return (
-    <div className=" bg-white">
-      <div className=" container">
-        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] 2xl:py-[100px] lg:py-[70px] py-[50px]">
-          <div className=" md:col-span-3 flex justify-center items-center ">
+    <div className="mt-[121px]">
+      <div className="container">
+        <div className="grid grid-cols-2 gap-x-[50px]">
+          <div>
             <div className="">
-              <Image
-                src="/assets/images/about_us.png"
-                width={596}
-                height={490}
-                alt="about us image"
-                className=""
-              />
+              <div className="flex md:justify-normal justify-center md:items-start items-center">
+                <HeadingIcon text={headingIconText.aboutUs__IconText} />
+              </div>
+              <h3 className="mb-[25px] text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
+                About Our{" "}
+                <span className="text-primary">Concrete Pumping Company</span>
+              </h3>
+              <p className="mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+                Prime Concrete Pumping is the go-to solution for efficient and
+                reliable concrete pumping services in Toronto and the
+                surrounding areas. With a commitment to quality and safety, we
+                specialize in delivering concrete precisely where you need it,
+                whether it's for residential, commercial, or industrial
+                projects. Our state-of-the-art equipment and skilled operators
+                ensure smooth and accurate concrete placement
+              </p>
+              <CommonButton styleProp={{ hidden: "hidden" }} />
             </div>
           </div>
-
-          <div className="md:col-span-4 ">
-            <div className="flex md:justify-normal justify-center md:items-start items-center">
-              <HeadingIcon text={headingIconText.aboutUs__IconText} />
+          <div>
+            <div className="grid grid-cols-7 gap-x-4">
+              <div className="col-span-4 border border-red-600">
+                <div>
+                  <div className="mb-6 w-full h-[132px] border-[9px] rounded-md border-primary flex justify-center">
+                    <div className="w-full text-center flex  flex-col justify-center">
+                      <p className="text-[45px] font-semibold !mb-0 leading-[45px]">
+                        15+
+                      </p>
+                      <p className="text-[25px] font-semibold !mt-0 leading-normal">
+                        {" "}
+                        Successful Years
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <Image
+                      src="/assets/images/about-us1.png"
+                      alt="About us"
+                      width={352}
+                      height={288}
+                      className="!max-h-[288px] w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-3 border border-red-600">
+                <Image
+                  src="/assets/images/about-us2.png"
+                  alt="About us"
+                  width={292}
+                  height={716}
+                  className="h-full w-full"
+                />
+              </div>
             </div>
-            <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
-              About Our Pool Installation Company in Toronto
-            </p>
-            <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
-              
-              Easy Pools custom designs and builds pool and spa solutions that
-              reflect your unique needs and personal aesthetic. With over 10
-              combined years of experience in the pool construction industry,
-              you can trust the team of designers and construction specialists
-              to create the perfect swimming pool, spa, and landscaped backyard.
-              From start to finish, our company does it all. We guarantee
-              on-time completion and quality.
-              </p>
-              <p className="mt-3 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
-              From start to finish, Easy Pools uses quality materials,
-              equipment, and its in-house expert staff to ensure a superior
-              finished product. All projects are supervised by our pool
-              installation company. With their shared commitment to excellence
-              and their involvement in every stage of construction, The Easy
-              Pools has a hands-on business approach.
-              </p>
-            
           </div>
         </div>
       </div>

@@ -1,15 +1,6 @@
-import Image from "next/image";
-
 const HeadingIcon = ({ text = "empty text" }) => {
   return (
     <div className="flex items-center pb-2">
-      {/* <Image
-        src="/assets/licensed/sectionicon.png"
-        width={48}
-        height={16}
-        alt="section logo"
-        className="h-4 w-12 mr-2 text-dark text-base"
-      /> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="27"
@@ -22,7 +13,7 @@ const HeadingIcon = ({ text = "empty text" }) => {
           fill="#F43939"
         />
       </svg>
-      <p className=" text-center md:text-base xs:text-[10px]">{text}</p>
+      <p className="text-center text-sm ml-1">{text}</p>
     </div>
   );
 };
