@@ -23,6 +23,7 @@ const MainHomePageComponent = () => {
         <HomeBanner />
       </section>
 
+      {/*
       <section>
         <PartnerNRatings />
       </section>
@@ -82,6 +83,8 @@ const MainHomePageComponent = () => {
       <section>
         <LicensedNInsured />
       </section>
+
+  */}
     </div>
   );
 };
