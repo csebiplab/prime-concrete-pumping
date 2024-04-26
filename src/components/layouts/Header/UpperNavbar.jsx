@@ -14,7 +14,7 @@ const UpperNavbar = () => {
         <div className="flex justify-center gap-x-4 lg:gap-x-7">
           <a
             href={`mailto:primeconcretetoronto@gmail.com`}
-            className="text-sm flex gap-x-[10px] items-center rounded-md"
+            className="text-sm hidden lg:flex gap-x-[10px] items-center rounded-md"
           >
             <Image
               src="/assets/icons/email.png"
