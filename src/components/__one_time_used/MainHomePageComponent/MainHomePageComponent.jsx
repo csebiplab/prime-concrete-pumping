@@ -1,19 +1,9 @@
 import React from "react";
 import HomeBanner from "./HomeBanner/HomeBanner";
 import AboutUs from "./AboutUs/AboutUs";
-import OurServices from "./OurServices/OurServices";
-import MaterialsNEquip from "./MaterialsNEquip/MaterialsNEquip";
-import TopTierPools from "./TopTierPools/TopTierPools";
-import BenefitsWithEasyPools from "./BenefitsWithEasyPools/BenefitsWithEasyPools";
-import Review from "./Review/Review";
-import HireForInstallationService from "./HireForInstallationService/HireForInstallationService";
-import JoinWithUs from "./JoinWithUs/JoinWithUs";
-import FAQ from "./FAQ/FAQ";
-import ProjectGallery from "./ProjectGallery/ProjectGallery";
-import OurExpertPoolInstaller from "./OurExpertPoolInstaller/OurExpertPoolInstaller";
 import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback";
-import LicensedNInsured from "./LicensedNInsured/LicensedNInsured";
+import WhoIsTheBest from "./WhoIsTheBest/WhoIsTheBest";
 
 const MainHomePageComponent = () => {
   return (
@@ -68,7 +58,10 @@ const MainHomePageComponent = () => {
         <OurExpertPoolInstaller />
       </section>
 
-     
+     <section>
+        <OurServiceAreas />
+      </section>
+
 
        <section>
         <LicensedNInsured />
@@ -77,6 +70,10 @@ const MainHomePageComponent = () => {
  
       
   */}
+
+      <section>
+        <WhoIsTheBest />
+      </section>
 
       <section>
         <OurServiceAreas />
