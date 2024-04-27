@@ -7,6 +7,7 @@ import WhoIsTheBest from "./WhoIsTheBest/WhoIsTheBest";
 import IsConcretePumpingCostly from "./IsConcretePumpingCostly/IsConcretePumpingCostly";
 import KnowAboutConcretePumping from "./KnowAboutConcretePumping/KnowAboutConcretePumping";
 import WorkStyle from "./WorkStyle/WorkStyle";
+import Review from "./Review/Review";
 
 const MainHomePageComponent = () => {
   return (
@@ -21,6 +22,10 @@ const MainHomePageComponent = () => {
 
       <section>
         <KnowAboutConcretePumping />
+      </section>
+
+      <section>
+        <Review />
       </section>
 
       <section>
