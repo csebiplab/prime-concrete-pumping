@@ -4,6 +4,7 @@ export const headingIconText = {
     workStyle__IconText: "Works Style",
     leadingCompany__IconText: "Leading Company",
     expertArea__IconText: "Expert Area",
+    ourWorkingProcess__IconText: "Our Working Process",
     map__IconTxt: "Our Service Areas",
     ourServices__IconTxt: "Services",
     whoIsBest__IconText: 'Who Is Best',
