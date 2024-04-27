@@ -12,7 +12,7 @@ const IsConcretePumpingCostly = () => {
             <div className="">
               <Image
                 alt="Is Concrete Pumping Costly"
-                src="/assets/images/is-concrete-pumping-costly.png"
+                src="/assets/images/concrete-is-not-costly.png"
                 width={650}
                 height={580}
                 className="w-auto h-auto lg:w-[650px] lg:h-[580px]"
