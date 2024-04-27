@@ -5,6 +5,7 @@ import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback";
 import WhoIsTheBest from "./WhoIsTheBest/WhoIsTheBest";
 import IsConcretePumpingCostly from "./IsConcretePumpingCostly/IsConcretePumpingCostly";
+import KnowAboutConcretePumping from "./KnowAboutConcretePumping/KnowAboutConcretePumping";
 
 const MainHomePageComponent = () => {
   return (
@@ -17,60 +18,9 @@ const MainHomePageComponent = () => {
         <AboutUs />
       </section>
 
-      {/*
-
       <section>
-        <OurServices />
+        <KnowAboutConcretePumping />
       </section>
-
-      <section>
-        <MaterialsNEquip />
-      </section>
-
-      <section>
-        <TopTierPools />
-      </section>
-
-      <section>
-        <BenefitsWithEasyPools />
-      </section>
-
-      <section>
-        <Review />
-      </section>
-
-      <section>
-        <HireForInstallationService />
-      </section>
-
-      <section>
-        <JoinWithUs />
-      </section>
-
-      <section>
-        <FAQ />
-      </section>
-
-      <section>
-        <ProjectGallery />
-      </section>
-
-      <section>
-        <OurExpertPoolInstaller />
-      </section>
-
-     <section>
-        <OurServiceAreas />
-      </section>
-
-
-       <section>
-        <LicensedNInsured />
-      </section>
-
- 
-      
-  */}
 
       <section>
         <IsConcretePumpingCostly />

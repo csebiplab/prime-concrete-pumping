@@ -6,65 +6,63 @@ import CommonButton from "@/components/ui/CommonButton";
 
 const AboutUs = () => {
   return (
-    <div className="mt-[121px]">
-      <div className="container">
-        <div className="grid grid-cols-2 gap-x-[50px]">
-          <div>
-            <div className="">
-              <div className="flex md:justify-normal justify-center md:items-start items-center">
-                <HeadingIcon text={headingIconText.aboutUs__IconText} />
-              </div>
-              <h3 className="mb-[25px] text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
-                About Our{" "}
-                <span className="text-primary">Concrete Pumping Company</span>
-              </h3>
-              <p className="mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
-                Prime Concrete Pumping is the go-to solution for efficient and
-                reliable concrete pumping services in Toronto and the
-                surrounding areas. With a commitment to quality and safety, we
-                specialize in delivering concrete precisely where you need it,
-                whether it's for residential, commercial, or industrial
-                projects. Our state-of-the-art equipment and skilled operators
-                ensure smooth and accurate concrete placement
-              </p>
-              <CommonButton styleProp={{ hidden: "hidden" }} />
+    <div className="container">
+      <div className="grid grid-cols-2 gap-x-[50px]">
+        <div>
+          <div className="">
+            <div className="flex md:justify-normal justify-center md:items-start items-center">
+              <HeadingIcon text={headingIconText.aboutUs__IconText} />
             </div>
+            <h3 className="mb-[25px] text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
+              About Our{" "}
+              <span className="text-primary">Concrete Pumping Company</span>
+            </h3>
+            <p className="mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+              Prime Concrete Pumping is the go-to solution for efficient and
+              reliable concrete pumping services in Toronto and the surrounding
+              areas. With a commitment to quality and safety, we specialize in
+              delivering concrete precisely where you need it, whether it's for
+              residential, commercial, or industrial projects. Our
+              state-of-the-art equipment and skilled operators ensure smooth and
+              accurate concrete placement
+            </p>
+            <CommonButton styleProp={{ hidden: "hidden" }} />
           </div>
-          <div>
-            <div className="grid grid-cols-7 gap-x-4">
-              <div className="col-span-4 border border-red-600">
-                <div>
-                  <div className="mb-6 w-full h-[132px] border-[9px] rounded-md border-primary flex justify-center">
-                    <div className="w-full text-center flex  flex-col justify-center">
-                      <p className="text-[45px] font-semibold !mb-0 leading-[45px]">
-                        15+
-                      </p>
-                      <p className="text-[25px] font-semibold !mt-0 leading-normal">
-                        {" "}
-                        Successful Years
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <Image
-                      src="/assets/images/about-us1.png"
-                      alt="About us"
-                      width={352}
-                      height={288}
-                      className="!max-h-[288px] w-full"
-                    />
+        </div>
+        <div>
+          <div className="grid grid-cols-7 gap-x-4">
+            <div className="col-span-4 border border-red-600">
+              <div>
+                <div className="mb-6 w-full h-[132px] border-[9px] rounded-md border-primary flex justify-center">
+                  <div className="w-full text-center flex  flex-col justify-center">
+                    <p className="text-[45px] font-semibold !mb-0 leading-[45px]">
+                      15+
+                    </p>
+                    <p className="text-[25px] font-semibold !mt-0 leading-normal">
+                      {" "}
+                      Successful Years
+                    </p>
                   </div>
                 </div>
+                <div>
+                  <Image
+                    src="/assets/images/about-us1.png"
+                    alt="About us"
+                    width={352}
+                    height={288}
+                    className="!max-h-[288px] w-full"
+                  />
+                </div>
               </div>
-              <div className="col-span-3 border border-red-600">
-                <Image
-                  src="/assets/images/about-us2.png"
-                  alt="About us"
-                  width={292}
-                  height={716}
-                  className="h-full w-full"
-                />
-              </div>
+            </div>
+            <div className="col-span-3 border border-red-600">
+              <Image
+                src="/assets/images/about-us2.png"
+                alt="About us"
+                width={292}
+                height={716}
+                className="h-full w-full"
+              />
             </div>
           </div>
         </div>
