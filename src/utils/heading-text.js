@@ -2,6 +2,7 @@ export const headingIconText = {
     aboutUs__IconText: "About Us",
     knowAboutConcretePumping__IconText: "Know About Concrete Pumping",
     workStyle__IconText: "Works Style",
+    leadingCompany__IconText: "Leading Company",
     map__IconTxt: "Our Service Areas",
     ourServices__IconTxt: "Services",
     whoIsBest__IconText: 'Who Is Best',
