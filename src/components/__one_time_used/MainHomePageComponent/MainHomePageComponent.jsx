@@ -68,10 +68,7 @@ const MainHomePageComponent = () => {
         <OurExpertPoolInstaller />
       </section>
 
-      <section>
-        <OurServiceAreas />
-      </section>
-
+     
 
        <section>
         <LicensedNInsured />
@@ -80,6 +77,10 @@ const MainHomePageComponent = () => {
  
       
   */}
+
+      <section>
+        <OurServiceAreas />
+      </section>
 
       <section>
         <GiveUsFeedback />
