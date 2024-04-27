@@ -5,6 +5,7 @@ export const headingIconText = {
     leadingCompany__IconText: "Leading Company",
     expertArea__IconText: "Expert Area",
     ourWorkingProcess__IconText: "Our Working Process",
+    anySizePr__IconText: "Any Size Projects With Us",
     map__IconTxt: "Our Service Areas",
     ourServices__IconTxt: "Services",
     whoIsBest__IconText: 'Who Is Best',
