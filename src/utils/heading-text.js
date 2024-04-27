@@ -3,6 +3,7 @@ export const headingIconText = {
     knowAboutConcretePumping__IconText: "Know About Concrete Pumping",
     workStyle__IconText: "Works Style",
     leadingCompany__IconText: "Leading Company",
+    expertArea__IconText: "Expert Area",
     map__IconTxt: "Our Service Areas",
     ourServices__IconTxt: "Services",
     whoIsBest__IconText: 'Who Is Best',
