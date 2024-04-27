@@ -6,7 +6,6 @@ import {
   FaPhoneVolume,
   FaXTwitter,
 } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
 import Image from "next/image";
 
 import "./GiveUsFeedback.css";
