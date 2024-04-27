@@ -6,6 +6,7 @@ import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback";
 import WhoIsTheBest from "./WhoIsTheBest/WhoIsTheBest";
 import IsConcretePumpingCostly from "./IsConcretePumpingCostly/IsConcretePumpingCostly";
 import KnowAboutConcretePumping from "./KnowAboutConcretePumping/KnowAboutConcretePumping";
+import WorkStyle from "./WorkStyle/WorkStyle";
 
 const MainHomePageComponent = () => {
   return (
@@ -20,6 +21,10 @@ const MainHomePageComponent = () => {
 
       <section>
         <KnowAboutConcretePumping />
+      </section>
+
+      <section>
+        <WorkStyle />
       </section>
 
       <section>
