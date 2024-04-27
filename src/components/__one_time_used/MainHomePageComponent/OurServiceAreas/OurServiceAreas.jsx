@@ -54,16 +54,16 @@ const maps = [
 
 const OurServiceAreas = () => {
   return (
-    <div className="area-bg ">
+    <div className="">
       <div className="container">
         <div className=" 2xl:py-[55px] py-[30px] md:mx-0 xs:mx-[30px]  ">
           <div className="mx-auto   flex flex-col items-center justify-center">
             <HeadingIcon text={headingIconText.map__IconTxt} />
 
             <div>
-              <p className="lg:text-[36px] md:text-[20px] xs:text-[16px] lg:mb-12 mb-5 text-center">
-                Serving the Greater Toronto Horseshoe Area for all your pool's
-                needs.
+              <p className="text-base md:text-xl lg:text-4xl mb-5 lg:mb-12 text-center">
+                <span className="text-primary">Service Area</span> of Concrete
+                Plumbing in Toronto
               </p>
             </div>
           </div>
@@ -88,10 +88,16 @@ const OurServiceAreas = () => {
                 {maps.map((loc, i) => (
                   <SwiperSlide
                     key={i}
-                    className="relative  rounded-xl px-[45px]"
+                    // className="relative  rounded-xl px-[45px]"
+
+                    className={`px-[90px] md:px-0 mx-6`}
                   >
-                    <div>
-                      <div className="shadow-md p-0 relative">
+                    <div
+                      className={`${
+                        (i + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
+                      }`}
+                    >
+                      <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
                         <iframe
                           src={loc?.src}
                           height="325"
@@ -100,13 +106,13 @@ const OurServiceAreas = () => {
                           loading="lazy"
                           referrerPolicy="no-referrer-when-downgrade"
                           className="rounded-xl"
-                        ></iframe>
+                        />
                         <div className="absolute rounded-xl inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
                           <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">
                             Visit Map
                           </button>
                         </div>
-                        <p className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
+                        <p className="text-base py-4 bg-primary text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
                           {loc?.location}
                         </p>
                       </div>
