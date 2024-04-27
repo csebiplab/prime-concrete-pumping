@@ -77,11 +77,13 @@ const MainHomePageComponent = () => {
         <LicensedNInsured />
       </section>
 
- <section>
-        <GiveUsFeedback />
-      </section>
+ 
       
   */}
+
+      <section>
+        <GiveUsFeedback />
+      </section>
     </div>
   );
 };
