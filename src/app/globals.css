@@ -17,6 +17,10 @@ footer * {
   @apply max-w-screen-5xl px-3 md:px-5 lg:px-10 xl:px-20 2xl:px-28 3xl:px-40 4xl:px-52 5xl:px-[285px] mx-auto;
 }
 
+section {
+  @apply my-[60px];
+}
+
 a {
   @apply text-primary underline-offset-2 hover:underline decoration-primary-700;
 }

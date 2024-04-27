@@ -75,7 +75,7 @@ const primeConcrete = [
 const WhoIsTheBest = () => {
   return (
     <div className="container">
-      <div className="py-10 2xl:py-20 shadow-sm mx-[35px] md:mx-0">
+      <div className="shadow-sm mx-[35px] md:mx-0">
         <div className="mx-auto  flex flex-col items-center justify-center">
           <div>
             <HeadingIcon text={headingIconText.whoIsBest__IconText} />

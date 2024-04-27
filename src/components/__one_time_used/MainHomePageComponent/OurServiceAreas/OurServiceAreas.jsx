@@ -56,7 +56,7 @@ const OurServiceAreas = () => {
   return (
     <div className="">
       <div className="container">
-        <div className=" 2xl:py-[55px] py-[30px] md:mx-0 xs:mx-[30px]  ">
+        <div className="mx-[30px] md:mx-0">
           <div className="mx-auto   flex flex-col items-center justify-center">
             <HeadingIcon text={headingIconText.map__IconTxt} />
 
