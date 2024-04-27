@@ -1,0 +1,11 @@
+.footer__bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/footer_prime_concrete.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-bottom-bg {
+  background: #f43939;
+}

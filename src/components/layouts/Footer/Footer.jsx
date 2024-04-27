@@ -5,7 +5,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
-import "./footer.css";
+import "./Footer.css";
 
 const footerLinks = [
   {
@@ -177,8 +177,8 @@ const footerIcon = [
 const Footer = () => {
   return (
     <div className="">
-      <div className="footer__bg bg-blend-multiply bg-primary xs:px-[20px] lg:px-[35px] !text-white">
-        <footer className="container z-50 pt-[50px] xs:pt-[90px] 2xl:pt-[311px] pb-20 text-white">
+      <div className="footer__bg px-5 lg:px-[35px] !text-white">
+        <footer className="container !z-50 pt-[50px] xl:pt-[90px] 2xl:pt-[311px] pb-20 text-white">
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[126px] justify-end">
               <div className="w-full lg:w-auto">
