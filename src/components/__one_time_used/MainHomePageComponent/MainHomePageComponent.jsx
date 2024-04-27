@@ -72,14 +72,15 @@ const MainHomePageComponent = () => {
         <OurServiceAreas />
       </section>
 
-      <section>
-        <GiveUsFeedback />
-      </section>
 
-      <section>
+       <section>
         <LicensedNInsured />
       </section>
 
+ <section>
+        <GiveUsFeedback />
+      </section>
+      
   */}
     </div>
   );
