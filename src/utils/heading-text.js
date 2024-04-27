@@ -3,7 +3,7 @@ export const headingIconText = {
     map__IconTxt: "Our Service Areas",
     ourServices__IconTxt: "Services",
     whoIsBest__IconText: 'Who Is Best',
-    toptail__IconText: "Top-Tier Pools",
+    IsConcreteCostly__IconText: "Is Concrete Pumping Costly?",
     faq__IconText: "Frequently Asked Questions (FAQ)",
     aboutUs__IconText: "About Us",
     meterialNEquip__IconText: "Materials and Equipment",

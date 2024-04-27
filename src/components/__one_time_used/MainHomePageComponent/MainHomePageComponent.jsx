@@ -4,13 +4,14 @@ import AboutUs from "./AboutUs/AboutUs";
 import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback";
 import WhoIsTheBest from "./WhoIsTheBest/WhoIsTheBest";
+import IsConcretePumpingCostly from "./IsConcretePumpingCostly/IsConcretePumpingCostly";
 
 const MainHomePageComponent = () => {
   return (
     <div>
-      <section>
+      <div>
         <HomeBanner />
-      </section>
+      </div>
 
       <section>
         <AboutUs />
@@ -72,6 +73,10 @@ const MainHomePageComponent = () => {
   */}
 
       <section>
+        <IsConcretePumpingCostly />
+      </section>
+
+      <section>
         <WhoIsTheBest />
       </section>
 
@@ -79,9 +84,9 @@ const MainHomePageComponent = () => {
         <OurServiceAreas />
       </section>
 
-      <section>
+      <div>
         <GiveUsFeedback />
-      </section>
+      </div>
     </div>
   );
 };
