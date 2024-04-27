@@ -45,9 +45,9 @@ const MainHomePageComponent = () => {
         <WhoIsTheBest />
       </section>
 
-      <section>
+      <div>
         <OurServiceAreas />
-      </section>
+      </div>
 
       <div>
         <GiveUsFeedback />

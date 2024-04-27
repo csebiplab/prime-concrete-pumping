@@ -55,78 +55,76 @@ const maps = [
 const OurServiceAreas = () => {
   return (
     <div className="">
-      <div className="container">
-        <div className="mx-[30px] md:mx-0">
-          <div className="mx-auto   flex flex-col items-center justify-center">
-            <HeadingIcon text={headingIconText.map__IconTxt} />
+      <div className="mx-[30px] md:mx-0">
+        <div className="mx-auto   flex flex-col items-center justify-center">
+          <HeadingIcon text={headingIconText.map__IconTxt} />
 
-            <div>
-              <p className="text-base md:text-xl lg:text-4xl mb-5 lg:mb-12 text-center">
-                <span className="text-primary">Service Area</span> of Concrete
-                Plumbing in Toronto
-              </p>
-            </div>
+          <div>
+            <p className="text-base md:text-xl lg:text-4xl mb-5 lg:mb-12 text-center">
+              <span className="text-primary">Service Area</span> of Concrete
+              Plumbing in Toronto
+            </p>
           </div>
-
-          {/* //   ======================= map Card ==================// */}
-          <>
-            <div className="">
-              <Swiper
-                modules={[Navigation, Autoplay]}
-                loop={true}
-                autoplay={{
-                  delay: 2000,
-                  pauseOnMouseEnter: false,
-                  disableOnInteraction: false,
-                  stopOnLastSlide: false,
-                }}
-                speed={4000}
-                allowTouchMove={false}
-                breakpoints={breakpoints}
-                className="!px-8 !xl:px-0"
-              >
-                {maps.map((loc, i) => (
-                  <SwiperSlide
-                    key={i}
-                    // className="relative  rounded-xl px-[45px]"
-
-                    className={`px-[90px] md:px-0 mx-6`}
-                  >
-                    <div
-                      className={`${
-                        (i + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
-                      }`}
-                    >
-                      <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
-                        <iframe
-                          src={loc?.src}
-                          height="325"
-                          style={{ border: 0, width: "100%" }}
-                          allowFullScreen={false}
-                          loading="lazy"
-                          referrerPolicy="no-referrer-when-downgrade"
-                          className="rounded-xl"
-                        />
-                        <div className="absolute rounded-xl inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                          <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">
-                            Visit Map
-                          </button>
-                        </div>
-                        <p className="text-base py-4 bg-primary text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
-                          {loc?.location}
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-
-                <div className="block lg:hidden">
-                  <SwiperButton />
-                </div>
-              </Swiper>
-            </div>
-          </>
         </div>
+
+        {/* //   ======================= map Card ==================// */}
+        <>
+          <div className="">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                pauseOnMouseEnter: false,
+                disableOnInteraction: false,
+                stopOnLastSlide: false,
+              }}
+              speed={4000}
+              allowTouchMove={false}
+              breakpoints={breakpoints}
+              className="!px-8 !xl:px-0"
+            >
+              {maps.map((loc, i) => (
+                <SwiperSlide
+                  key={i}
+                  // className="relative  rounded-xl px-[45px]"
+
+                  className={`px-[90px] md:px-0 mx-6`}
+                >
+                  <div
+                    className={`${
+                      (i + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
+                    }`}
+                  >
+                    <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
+                      <iframe
+                        src={loc?.src}
+                        height="325"
+                        style={{ border: 0, width: "100%" }}
+                        allowFullScreen={false}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-xl"
+                      />
+                      <div className="absolute rounded-xl inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                        <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">
+                          Visit Map
+                        </button>
+                      </div>
+                      <p className="text-base py-4 bg-primary text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
+                        {loc?.location}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+
+              <div className="block lg:hidden">
+                <SwiperButton />
+              </div>
+            </Swiper>
+          </div>
+        </>
       </div>
     </div>
   );
