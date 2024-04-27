@@ -9,6 +9,7 @@ import KnowAboutConcretePumping from "./KnowAboutConcretePumping/KnowAboutConcre
 import WorkStyle from "./WorkStyle/WorkStyle";
 import Review from "./Review/Review";
 import LeadingCompany from "./LeadingCompany/LeadingCompany";
+import ExpertArea from "./ExpertArea/ExpertArea";
 
 const MainHomePageComponent = () => {
   return (
@@ -24,6 +25,10 @@ const MainHomePageComponent = () => {
       <section>
         <KnowAboutConcretePumping />
       </section>
+
+      <div>
+        <ExpertArea />
+      </div>
 
       <section>
         <LeadingCompany />
