@@ -2,7 +2,9 @@ import Image from "next/image";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
-const JoinWithUs = () => {
+import "./ConcretePumpingService.css";
+
+const ConcretePumpingService = () => {
   return (
     <div className="">
       <div className="custom-container px-4 md:px-0 mb-[60px] grid grid-cols-1 md:grid-cols-8 gap-4">
@@ -54,4 +56,4 @@ const JoinWithUs = () => {
   );
 };
 
-export default JoinWithUs;
+export default ConcretePumpingService;
