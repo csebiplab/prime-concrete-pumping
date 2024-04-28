@@ -54,17 +54,15 @@ const maps = [
 
 const OurServiceAreas = () => {
   return (
-    <div className="">
+    <div className="custom-container mt-10">
       <div className="mx-[30px] md:mx-0">
-        <div className="mx-auto   flex flex-col items-center justify-center">
+        <div className="mx-auto flex flex-col items-center justify-center">
           <HeadingIcon text={headingIconText.map__IconTxt} />
 
-          <div>
-            <p className="text-base md:text-xl lg:text-4xl mb-5 lg:mb-12 text-center">
-              <span className="text-primary">Service Area</span> of Concrete
-              Plumbing in Toronto
-            </p>
-          </div>
+          <p className="text-base md:text-xl lg:text-4xl mb-0 lg:mb-12 text-center">
+            <span className="text-primary">Service Area</span> of Concrete
+            Plumbing in Toronto
+          </p>
         </div>
 
         {/* //   ======================= map Card ==================// */}
@@ -82,14 +80,14 @@ const OurServiceAreas = () => {
               speed={4000}
               allowTouchMove={false}
               breakpoints={breakpoints}
-              className="!px-8 !xl:px-0"
+              // className="!px-8 !xl:px-0"
             >
               {maps.map((loc, i) => (
                 <SwiperSlide
                   key={i}
                   // className="relative  rounded-xl px-[45px]"
 
-                  className={`px-[90px] md:px-0 mx-6`}
+                  className={`px-0 mx-6`}
                 >
                   <div
                     className={`${
