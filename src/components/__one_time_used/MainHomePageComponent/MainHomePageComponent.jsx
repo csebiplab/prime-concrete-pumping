@@ -15,6 +15,7 @@ import AnySizePr from "./AnySizePr/AnySizePr";
 import DepandableConcretePumpTruck from "./DepandableConcretePumpTruck/DepandableConcretePumpTruck";
 import ExOfOurCompany from "./ExOfOurCompany/ExOfOurCompany";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import ConcretePumpingService from "./ConcretePumpingService/ConcretePumpingService";
 
 const MainHomePageComponent = () => {
   return (
@@ -30,6 +31,10 @@ const MainHomePageComponent = () => {
       <section>
         <KnowAboutConcretePumping />
       </section>
+
+      <div>
+        <ConcretePumpingService />
+      </div>
 
       <div>
         <ProjectGallery />
