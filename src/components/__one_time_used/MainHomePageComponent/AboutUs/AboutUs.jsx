@@ -7,8 +7,8 @@ import CommonButton from "@/components/ui/CommonButton";
 const AboutUs = () => {
   return (
     <div className="container">
-      <div className="grid grid-cols-2 gap-x-[50px]">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-[50px]">
+        <div className="order-2 md:order-1">
           <div className="">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.aboutUs__IconText} />
@@ -17,7 +17,7 @@ const AboutUs = () => {
               About Our{" "}
               <span className="text-primary">Concrete Pumping Company</span>
             </h3>
-            <p className="mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+            <p className="mb-5 md:mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
               Prime Concrete Pumping is the go-to solution for efficient and
               reliable concrete pumping services in Toronto and the surrounding
               areas. With a commitment to quality and safety, we specialize in
@@ -29,7 +29,7 @@ const AboutUs = () => {
             <CommonButton styleProp={{ hidden: "hidden" }} />
           </div>
         </div>
-        <div>
+        <div className="order-1 md:order-2">
           <div className="grid grid-cols-7 gap-x-4">
             <div className="col-span-4 border border-red-600">
               <div>

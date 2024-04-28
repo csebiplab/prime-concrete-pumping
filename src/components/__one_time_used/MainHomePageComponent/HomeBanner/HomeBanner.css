@@ -5,3 +5,15 @@
   background-size: cover;
   background-position: center;
 }
+
+.banner__form {
+  border-radius: 9px 200px 9px 9px;
+  border: 3px solid #1e252b;
+  background: #1e252b;
+}
+
+form > input {
+  border-radius: 9px;
+  border: 1px solid #cecece;
+  background: #fff;
+}

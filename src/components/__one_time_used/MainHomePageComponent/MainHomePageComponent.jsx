@@ -16,6 +16,7 @@ import DepandableConcretePumpTruck from "./DepandableConcretePumpTruck/Depandabl
 import ExOfOurCompany from "./ExOfOurCompany/ExOfOurCompany";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import ConcretePumpingService from "./ConcretePumpingService/ConcretePumpingService";
+import BannerForm from "./HomeBanner/BannerForm";
 
 const MainHomePageComponent = () => {
   return (
@@ -23,7 +24,9 @@ const MainHomePageComponent = () => {
       <div>
         <HomeBanner />
       </div>
-
+      <section className="block md:hidden container">
+        <BannerForm />
+      </section>
       <section>
         <AboutUs />
       </section>

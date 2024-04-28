@@ -6,8 +6,8 @@ import React from "react";
 const DepandableConcretePumpTruck = () => {
   return (
     <div className="container">
-      <div className="grid grid-cols-2 gap-x-[50px]">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-[50px]">
+        <div className="order-2 md:order-1">
           <div className="">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon
@@ -32,7 +32,7 @@ const DepandableConcretePumpTruck = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="order-1 md:order-2">
           <div className="grid grid-cols-7 gap-x-4">
             <div className="col-span-4 border border-red-600">
               <div>
