@@ -13,6 +13,8 @@ import ExpertArea from "./ExpertArea/ExpertArea";
 import OurWorkingProcess from "./OurWorkingProcess/OurWorkingProcess";
 import AnySizePr from "./AnySizePr/AnySizePr";
 import DepandableConcretePumpTruck from "./DepandableConcretePumpTruck/DepandableConcretePumpTruck";
+import ExOfOurCompany from "./ExOfOurCompany/ExOfOurCompany";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
 
 const MainHomePageComponent = () => {
   return (
@@ -27,6 +29,14 @@ const MainHomePageComponent = () => {
 
       <section>
         <KnowAboutConcretePumping />
+      </section>
+
+      <div>
+        <ProjectGallery />
+      </div>
+
+      <section>
+        <ExOfOurCompany />
       </section>
 
       <section>
