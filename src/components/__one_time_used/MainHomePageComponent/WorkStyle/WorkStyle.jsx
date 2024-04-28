@@ -6,12 +6,12 @@ import React from "react";
 const WorkStyle = () => {
   return (
     <div className="container ">
-      <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-        <div>
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+        <div className="order-2 md:order-1">
           <div className="">
             <HeadingIcon text={headingIconText.workStyle__IconText} />
 
-            <h3 className="text-black !text-3xl !lg:text-4xl !font-medium">
+            <h3 className="text-black !text-xl !md:text-3xl !font-medium">
               How <span className="text-primary">Concrete Pump Works?</span>
             </h3>
 
@@ -33,7 +33,7 @@ const WorkStyle = () => {
             </p>
           </div>
         </div>
-        <div className="">
+        <div className="order-1 md:order-2">
           <Image
             alt="What is concrete pumping"
             src="/assets/images/work-style.png"
