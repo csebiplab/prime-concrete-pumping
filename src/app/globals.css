@@ -26,7 +26,7 @@ footer * {
 }
 
 section {
-  @apply my-[60px];
+  @apply my-7 md:my-[60px];
 }
 
 a {
