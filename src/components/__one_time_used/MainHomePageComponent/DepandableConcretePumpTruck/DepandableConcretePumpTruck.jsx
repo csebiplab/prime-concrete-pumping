@@ -18,7 +18,7 @@ const DepandableConcretePumpTruck = () => {
               <span className="text-primary">Dependable </span>
               Concrete Pump Trucks Toronto
             </h3>
-            <p className="mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+            <p className="text-lg font-medium leading-[194%]">
               Prime Concrete Pumping offers dependable concrete pump trucks in
               Toronto and surrounding areas. With years of experience in the
               industry, we specialize in providing efficient and reliable
