@@ -13,17 +13,17 @@ const AnySizePr = () => {
             alt="Any size project with us"
             width={469}
             height={425}
-            className="w-[262px] h-[238px] lg:w-[300px] lg:h-[280px] 2xl:w-[469px] 2xl:h-[425px]"
+            className=" lg:w-[300px] lg:h-[280px] 2xl:w-[469px] 2xl:h-[425px]"
           />
           <Image
             src="/assets/images/anysize2.png"
             alt="Any size project with us"
             width={351}
             height={276}
-            className="w-[196px] h-[154px] lg:w-[280px] lg:h-[200px] 2xl:w-[351px] 2xl:h-[276px] absolute right-6 top-48"
+            className="2xl:w-[351px] 2xl:h-[276px] absolute right-6 top-48"
           />
         </div>
-        <div>
+        <div className="mt-16 md:mt-8 lg:mt-0">
           <HeadingIcon text={headingIconText.anySizePr__IconText} />
           <h3 className="text-black text-lg md:text-3xl lg:text-4xl mb-5 lg:mb-6 font-medium">
             Expert
