@@ -100,7 +100,7 @@ const WhoIsTheBest = () => {
           </div> */}
         </div>
 
-        <div className=" grid md:grid-cols-2 2xl:gap-[50px] md:gap-[30px] ">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8 2xl:gap-12">
           <div className=" border-2 shadow">
             <h4 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base 2xl:text-2xl">
               Usual concrete pumping contractors
