@@ -9,9 +9,9 @@ const OurWorkingProcess = () => {
       <div>
         <div className="flex flex-col justify-center items-center">
           <HeadingIcon text={headingIconText.ourWorkingProcess__IconText} />
-          <h3 className="text-black text-3xl lg:text-4xl font-medium mb-9">
-            Working Process
-            <span className="text-primary"> of Our Pumping Experts</span>
+          <h3 className="text-black text-xl md:text-3xl lg:text-4xl font-medium mb-9">
+            <span className="text-primary">Working Process </span>
+            of Our Pumping Experts
           </h3>
         </div>
         <div className="relative mt-20">
