@@ -56,7 +56,7 @@ const Header = () => {
             </div>
             <div className="block lg:hidden">
               <Image
-                src="/assets/icons/menu.png"
+                src="/assets/images/hamburger.png"
                 width={22}
                 height={22}
                 alt="Menu"
