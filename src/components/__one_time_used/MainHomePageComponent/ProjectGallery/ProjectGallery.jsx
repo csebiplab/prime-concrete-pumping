@@ -14,25 +14,25 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 
 const galImgs = [
-  "/assets/gellary/img1.png",
-  "/assets/gellary/img2.png",
-  "/assets/gellary/img3.png",
-  "/assets/gellary/img4.png",
-  "/assets/gellary/img1.png",
-  "/assets/gellary/img6.png",
-  "/assets/gellary/img9.png",
-  "/assets/gellary/img10.png",
+  "/assets/gellary/img-1.png",
+  "/assets/gellary/img-2.png",
+  "/assets/gellary/img-3.png",
+  "/assets/gellary/img-4.png",
+  "/assets/gellary/img-5.png",
+  "/assets/gellary/img-6.png",
+  "/assets/gellary/img-7.png",
+  "/assets/gellary/img-8.png",
 ];
 
 const galImgs2 = [
-  "/assets/gellary/img4.png",
-  "/assets/gellary/img3.png",
-  "/assets/gellary/img2.png",
-  "/assets/gellary/img4.png",
-  "/assets/gellary/img6.png",
-  "/assets/gellary/img1.png",
-  "/assets/gellary/img10.png",
-  "/assets/gellary/img9.png",
+  "/assets/gellary/img-5.png",
+  "/assets/gellary/img-6.png",
+  "/assets/gellary/img-7.png",
+  "/assets/gellary/img-8.png",
+  "/assets/gellary/img-9.png",
+  "/assets/gellary/img-10.png",
+  "/assets/gellary/img-11.png",
+  "/assets/gellary/img-12.png",
 ];
 
 const ProjectGallery = () => {
