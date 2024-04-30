@@ -21,7 +21,7 @@ const HomeBanner = () => {
         <div className="banner__form w-atuo py-10 px-12 mr-4 hidden md:block">
           <div>
             <p className="text-2xl text-white font-medium mb-6">
-              Request plumbing
+              Request Pumping
               <br />
               assistance today
             </p>

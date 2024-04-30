@@ -7,7 +7,7 @@ const BannerForm = () => {
     <div className="banner__form w-full py-9 px-7">
       <div>
         <p className="text-2xl text-white font-medium mb-6">
-          Request plumbing
+          Request Pumping
           <br />
           assistance today
         </p>
