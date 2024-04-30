@@ -34,7 +34,7 @@ const DepandableConcretePumpTruck = () => {
         </div>
         <div className="order-1 md:order-2">
           <div className="grid grid-cols-7 gap-x-4">
-            <div className="col-span-4 border border-red-600">
+            <div className="col-span-4">
               <div>
                 <div className="mb-6 w-full h-[132px] flex justify-center">
                   <Image
@@ -56,7 +56,7 @@ const DepandableConcretePumpTruck = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-3 border border-red-600">
+            <div className="col-span-3">
               <Image
                 src="/assets/images/dp3.png"
                 alt="About us"

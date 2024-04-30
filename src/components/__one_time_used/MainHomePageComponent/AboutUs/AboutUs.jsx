@@ -17,7 +17,7 @@ const AboutUs = () => {
               About Our{" "}
               <span className="text-primary">Concrete Pumping Company</span>
             </h3>
-            <p className="mb-5 md:mb-[52px] 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+            <p className="text-lg font-medium leading-[194%] mt-6 mb-8 md:mb-12">
               Prime Concrete Pumping is the go-to solution for efficient and
               reliable concrete pumping services in Toronto and the surrounding
               areas. With a commitment to quality and safety, we specialize in
@@ -31,7 +31,7 @@ const AboutUs = () => {
         </div>
         <div className="order-1 md:order-2">
           <div className="grid grid-cols-7 gap-x-4">
-            <div className="col-span-4 border border-red-600">
+            <div className="col-span-4">
               <div>
                 <div className="mb-6 w-full h-[132px] border-[9px] rounded-md border-primary flex justify-center">
                   <div className="w-full text-center flex  flex-col justify-center">
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-3 border border-red-600">
+            <div className="col-span-3">
               <Image
                 src="/assets/images/about-us2.png"
                 alt="About us"
