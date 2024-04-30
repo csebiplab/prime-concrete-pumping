@@ -17,9 +17,9 @@ const ExpertArea = () => {
             className="w-full h-auto lg:w-[807px] lg:h-[715px]"
           />
         </div>
-        <div className="card__onImg border py-7 px-3 border-red-500 w-full lg:max-w-[60%] lg:absolute lg:right-0">
+        <div className="card__onImg py-7 px-3 w-full lg:max-w-[60%] lg:absolute lg:right-0">
           <HeadingIcon text={headingIconText.expertArea__IconText} />
-          <h3 className="text-black text-lg md:text-3xl lg:text-4xl mb-5 lg:mb-6 font-medium">
+          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-lg md:text-3xl lg:text-4xl font-medium">
             Expert
             <span className="text-primary"> Concrete Line Pump Toronto</span>
           </h3>

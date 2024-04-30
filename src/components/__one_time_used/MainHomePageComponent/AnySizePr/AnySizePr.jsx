@@ -25,7 +25,7 @@ const AnySizePr = () => {
         </div>
         <div className="mt-16 md:mt-8 lg:mt-0">
           <HeadingIcon text={headingIconText.anySizePr__IconText} />
-          <h3 className="text-black text-lg md:text-3xl lg:text-4xl mb-5 lg:mb-6 font-medium">
+          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-lg md:text-3xl lg:text-4xl font-medium">
             Expert
             <span className="text-primary"> Concrete Line Pump Toronto</span>
           </h3>

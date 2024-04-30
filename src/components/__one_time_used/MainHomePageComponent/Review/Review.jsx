@@ -70,7 +70,7 @@ const Review = () => {
         <div className=" flex flex-col justify-center items-center ">
           <HeadingIcon text={headingIconText.review__IconText} />
 
-          <h3 className="text-black !text-xl !lg:text-3xl !font-medium mb-9">
+          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4 text-black text-lg md:text-3xl lg:text-4xl !font-medium">
             Here’s what to expect{" "}
             <span className="text-primary">when you hire us</span>
           </h3>

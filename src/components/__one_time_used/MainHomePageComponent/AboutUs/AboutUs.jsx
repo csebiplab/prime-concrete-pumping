@@ -13,7 +13,7 @@ const AboutUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.aboutUs__IconText} />
             </div>
-            <h3 className="mb-[25px] text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
+            <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4 text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
               About Our{" "}
               <span className="text-primary">Concrete Pumping Company</span>
             </h3>

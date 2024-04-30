@@ -237,13 +237,13 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="mailto:rhconusa@gmail.com"
-                      className="footer-link items-center text-[8px] lg:text-[10px] text-white"
+                      className="footer-link items-center text-base lg:text-[12px] text-white"
                     >
-                      <IoIosMail className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}
+                      <IoIosMail className="lg:h-7 lg:w-7 h-4 w-4" />{" "}
                       easypools.landscaping@gmail.com
-                    </a>
+                    </Link>
                   </li>
                   <div className="mt-[38px]">
                     <div className="">

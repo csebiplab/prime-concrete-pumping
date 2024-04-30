@@ -12,12 +12,12 @@ const ConcretePumpingService = () => {
           className="order-1 md:order-2 md:col-span-4 card__onImg  border-2 shadow-md md:rounded-xl xs:rounded-t-xl z-50 5xl:ml-[285px] 4xl:ml-[200px] 3xl:ml-[180px] 2xl:ml-[130px] xl:ml-[90px] lg:ml-[50px]
           md:w-[520px] lg:w-[700px] xl:w-[750px] 2xl:w-[780px] 3xl:w-[800px] 4xl:w-[900px] 5xl:w-[925px] my-0 md:my-12 lg:my-16 3xl:my-20 px-6 py-7"
         >
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <HeadingIcon
               text={headingIconText.concretePumpingService__IconText}
             />
 
-            <h3 className="text-black text-lg md:text-3xl lg:text-4xl mb-5 lg:mb-6 font-medium">
+            <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4 text-black text-lg md:text-3xl lg:text-4xl font-medium">
               Best Concrete Pumping Service Provider in
               <span className="text-primary"> Toronto</span>
             </h3>

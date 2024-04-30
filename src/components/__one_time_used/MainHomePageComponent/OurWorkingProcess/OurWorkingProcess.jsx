@@ -9,7 +9,7 @@ const OurWorkingProcess = () => {
       <div>
         <div className="flex flex-col justify-center items-center">
           <HeadingIcon text={headingIconText.ourWorkingProcess__IconText} />
-          <h3 className="text-black text-xl md:text-3xl lg:text-4xl font-medium mb-9">
+          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-xl md:text-3xl lg:text-4xl font-medium">
             <span className="text-primary">Working Process </span>
             of Our Pumping Experts
           </h3>

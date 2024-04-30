@@ -24,7 +24,7 @@ const LeadingCompany = () => {
                 <HeadingIcon text={headingIconText.leadingCompany__IconText} />
 
                 <div>
-                  <h3 className="text-black text-lg md:text-3xl lg:text-4xl mb-5 lg:mb-6 font-medium">
+                  <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-lg md:text-3xl lg:text-4xl font-medium">
                     <span className="text-primary"> Leading the Toronto </span>
                     Concrete Pumping Industry
                   </h3>

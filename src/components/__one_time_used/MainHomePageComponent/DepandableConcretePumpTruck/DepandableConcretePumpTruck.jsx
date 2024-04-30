@@ -14,7 +14,7 @@ const DepandableConcretePumpTruck = () => {
                 text={headingIconText.DepandableConcrete__IconText}
               />
             </div>
-            <h3 className="mb-[25px] text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
+            <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
               <span className="text-primary">Dependable </span>
               Concrete Pump Trucks Toronto
             </h3>
