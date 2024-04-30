@@ -11,11 +11,11 @@ const WorkStyle = () => {
           <div className="">
             <HeadingIcon text={headingIconText.workStyle__IconText} />
 
-            <h3 className="text-black !text-xl !md:text-3xl !font-medium">
+            <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-lg md:text-3xl lg:text-4xl !font-medium">
               How <span className="text-primary">Concrete Pump Works?</span>
             </h3>
 
-            <p className="text-lg font-medium leading-[194%] mt-6">
+            <p className="text-lg font-medium leading-[194%]">
               A concrete pump is a vital machine used in construction to
               transfer liquid concrete from one place to another. It works by
               utilizing a piston or hydraulic system to pump concrete through

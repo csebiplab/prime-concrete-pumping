@@ -22,11 +22,11 @@ const KnowAboutConcretePumping = () => {
               text={headingIconText.knowAboutConcretePumping__IconText}
             />
 
-            <h3 className="text-black !text-3xl !lg:text-4xl !font-medium">
+            <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4 text-black !text-3xl !lg:text-4xl !font-medium">
               What Is <span className="text-primary">Concrete Pumping?</span>
             </h3>
 
-            <p className="text-lg font-medium leading-[194%] mt-6">
+            <p className="text-lg font-medium leading-[194%]">
               Concrete pumping is a method used in construction to efficiently
               and precisely deliver liquid concrete to its intended location. It
               involves using specialized equipment, typically a concrete pump,

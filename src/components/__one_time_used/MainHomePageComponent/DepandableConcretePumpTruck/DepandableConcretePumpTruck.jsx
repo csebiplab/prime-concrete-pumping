@@ -14,7 +14,7 @@ const DepandableConcretePumpTruck = () => {
                 text={headingIconText.DepandableConcrete__IconText}
               />
             </div>
-            <h3 className="mb-[25px] text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
+            <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-2xl md:text-3xl lg:text-4xl text-dark leading-normal text-center md:text-start">
               <span className="text-primary">Dependable </span>
               Concrete Pump Trucks Toronto
             </h3>
@@ -34,7 +34,7 @@ const DepandableConcretePumpTruck = () => {
         </div>
         <div className="order-1 md:order-2">
           <div className="grid grid-cols-7 gap-x-4">
-            <div className="col-span-4 border border-red-600">
+            <div className="col-span-4">
               <div>
                 <div className="mb-6 w-full h-[132px] flex justify-center">
                   <Image
@@ -56,7 +56,7 @@ const DepandableConcretePumpTruck = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-3 border border-red-600">
+            <div className="col-span-3">
               <Image
                 src="/assets/images/dp3.png"
                 alt="About us"

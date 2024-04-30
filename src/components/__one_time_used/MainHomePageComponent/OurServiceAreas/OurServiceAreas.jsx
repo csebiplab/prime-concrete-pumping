@@ -59,10 +59,10 @@ const OurServiceAreas = () => {
         <div className="mx-auto flex flex-col items-center justify-center">
           <HeadingIcon text={headingIconText.map__IconTxt} />
 
-          <p className="text-base md:text-xl lg:text-4xl mb-0 lg:mb-12 text-center">
+          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-base md:text-xl lg:text-4xl text-center">
             <span className="text-primary">Service Area</span> of Concrete
             Plumbing in Toronto
-          </p>
+          </h3>
         </div>
 
         {/* //   ======================= map Card ==================// */}

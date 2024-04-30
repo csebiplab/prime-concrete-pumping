@@ -81,23 +81,12 @@ const WhoIsTheBest = () => {
             <HeadingIcon text={headingIconText.whoIsBest__IconText} />
           </div>
 
-          <div className="mb-9">
-            <h3 className="text-lg md:text-xl 2xl:text-4xl text-center">
-              Choose the{" "}
-              <span className="text-primary">
-                Best Concrete Pumping Contractors
-              </span>
-            </h3>
-          </div>
-
-          {/* <div>
-            <p className=" md:block xs:hidden 2xl:text-[16px] text-[14px] text-center 3xl:py-[35px] py-[30px] ">
-              Trust our professionals to deliver exceptional results that exceed
-              expectations, transforming your backyard into a luxurious oasis.
-              Choose our expert pool installers in Toronto for a seamless and
-              satisfying experience from start to finish.
-            </p>
-          </div> */}
+          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-lg md:text-3xl lg:text-4xl text-center">
+            Choose the{" "}
+            <span className="text-primary">
+              Best Concrete Pumping Contractors
+            </span>
+          </h3>
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 2xl:gap-12">
