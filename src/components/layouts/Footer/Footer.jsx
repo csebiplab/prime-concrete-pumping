@@ -242,7 +242,7 @@ const Footer = () => {
                       className="footer-link items-center text-base lg:text-[12px] text-white"
                     >
                       <IoIosMail className="lg:h-7 lg:w-7 h-4 w-4" />{" "}
-                      easypools.landscaping@gmail.com
+                      primeconcretetoronto@gmail.com
                     </Link>
                   </li>
                   <div className="mt-[38px]">
