@@ -182,13 +182,13 @@ const Footer = () => {
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[126px] justify-center">
               <div className="w-full lg:w-auto">
-                <div className="">
+                <div className="mx-auto flex justify-center">
                   <Image
                     src="/assets/images/footer-brand-img.png"
                     height={311}
                     width={141}
                     alt="Prime Concrete Plumbing Logo"
-                    className="w-[311px] h-[141px]"
+                    className="w-[269px] h-[112px] md:w-[311px] md:h-[141px]"
                   />
                 </div>
                 <p className="text-white pt-6 leading-[200%] text-center md:text-start">
