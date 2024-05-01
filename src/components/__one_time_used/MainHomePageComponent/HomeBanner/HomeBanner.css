@@ -12,7 +12,8 @@
   background: #1e252b;
 }
 
-form > input {
+form > input,
+textarea {
   border-radius: 9px;
   border: 1px solid #cecece;
   background: #fff;

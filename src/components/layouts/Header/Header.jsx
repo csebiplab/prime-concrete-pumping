@@ -49,7 +49,10 @@ const Header = () => {
                 alt="Phone us"
                 className="w-[24px] h-[24px]"
               />
-              <Link href="/" className="text-primary flex flex-col">
+              <Link
+                href="tel:+1 (646) 683-4612"
+                className="text-primary flex flex-col"
+              >
                 <span className="text-base">Quick Contact</span>
                 <span className="font-bold">647-449-9512</span>
               </Link>
