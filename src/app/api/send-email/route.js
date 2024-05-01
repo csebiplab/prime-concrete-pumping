@@ -12,7 +12,7 @@ export async function POST(request) {
             secure: Boolean(process.env.SECURE),
             auth: {
                 user: process.env.USER,
-                pass: process.env.NEXT_PUBLIC_PASSWORD
+                pass: process.env.PASS
             }
         })
 
