@@ -192,8 +192,8 @@ const Footer = () => {
                   />
                 </div>
                 <p className="text-white pt-6 leading-[200%] text-center md:text-start">
-                  Easy reno simplifies the process and costs of renovation by
-                  bringing design, sourcing and management under one roof.
+                  From foundations to finishing touches, rely on Prime Ready Mix
+                  for superior solutions of concrete ready mix in Barrie.
                 </p>
               </div>
 
