@@ -6,12 +6,12 @@ import { UtilsModule } from "@/utils/nav-menus";
 
 const Header = () => {
   return (
-    <header className="custom-container">
+    <header className="custom-container sticky top-0 md:static !z-[100000]">
       {/* Social small nav */}
       <UpperNavbar />
 
       {/* Main navbar */}
-      <nav className="container py-1 main__header">
+      <nav className="container py-1 main__header ">
         <div className="flex items-center justify-between">
           <Link href="/">
             <Image
