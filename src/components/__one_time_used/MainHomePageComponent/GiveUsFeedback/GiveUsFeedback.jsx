@@ -23,7 +23,7 @@ export default function ContactHome() {
               <p className="text-white">647-449-9512</p> */}
 
               <a
-                href="tel:+1 (646) 683-4612"
+                href="tel:647-449-9512"
                 className="my-3 flex gap-2 items-center lg:text-lg text-sm justify-center lg:justify-start pb-6"
               >
                 <FaPhoneVolume className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
