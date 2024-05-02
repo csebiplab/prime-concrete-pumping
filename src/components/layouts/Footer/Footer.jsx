@@ -232,7 +232,7 @@ const Footer = () => {
                   </li>
                   <li className="lg:py-8 xs:py-[12px]">
                     <a
-                      href="tel:+1 (646) 683-4612"
+                      href="tel:647-449-9512"
                       className="footer-link items-center justify-center md:justify-normal text-base text-white"
                     >
                       <FaPhoneVolume className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}

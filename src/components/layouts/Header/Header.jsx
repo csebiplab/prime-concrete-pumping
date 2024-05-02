@@ -50,7 +50,7 @@ const Header = () => {
                 className="w-[24px] h-[24px]"
               />
               <a
-                href="tel:+1 (646) 683-4612"
+                href="tel:647-449-9512"
                 className="text-primary flex flex-col hover:no-underline link"
               >
                 <span className="text-base">Quick Contact</span>
