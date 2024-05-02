@@ -26,11 +26,11 @@ const HomeBanner = () => {
             <br />
             Pumping Company
           </h1>
-          <p className="text-lg font-medium leading-[194%] pt-6 pb-14">
+          <h3 className="text-lg font-medium leading-[194%] pt-6 pb-14">
             From residential foundations to commercial projects, Prime Concrete
             Pumping offers unmatched expertise in Toronto's concrete pumping
             needs.
-          </p>
+          </h3>
           {/* <CommonButton text="Get An Estimate" /> */}
           <Button
             onClick={handleOpen}
