@@ -6,12 +6,12 @@ import { UtilsModule } from "@/utils/nav-menus";
 
 const Header = () => {
   return (
-    <header className="custom-container">
+    <header className="custom-container sticky top-0 md:static !z-[100000]">
       {/* Social small nav */}
       <UpperNavbar />
 
       {/* Main navbar */}
-      <nav className="container py-1 main__header">
+      <nav className="container py-1 main__header ">
         <div className="flex items-center justify-between">
           <Link href="/">
             <Image
@@ -49,13 +49,13 @@ const Header = () => {
                 alt="Phone us"
                 className="w-[24px] h-[24px]"
               />
-              <Link
+              <a
                 href="tel:+1 (646) 683-4612"
-                className="text-primary flex flex-col"
+                className="text-primary flex flex-col hover:no-underline link"
               >
                 <span className="text-base">Quick Contact</span>
-                <span className="font-bold">647-449-9512</span>
-              </Link>
+                <span className="font-bold number">647-449-9512</span>
+              </a>
             </div>
             <div className="block lg:hidden">
               <Image

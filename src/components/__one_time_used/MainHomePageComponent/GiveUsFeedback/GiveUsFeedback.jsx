@@ -18,13 +18,31 @@ export default function ContactHome() {
               <FaMapLocationDot className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
               <p className="text-white">2a Cedar Ave, Vaughan. L3T 3V9</p>
             </div>
-            <div className="my-3 flex gap-2 items-center lg:text-lg text-sm justify-center lg:justify-start pb-6">
-              <FaPhoneVolume className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
-              <p className="text-white">647-449-9512</p>
+            <div className="">
+              {/* <FaPhoneVolume className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
+              <p className="text-white">647-449-9512</p> */}
+
+              <a
+                href="tel:+1 (646) 683-4612"
+                className="my-3 flex gap-2 items-center lg:text-lg text-sm justify-center lg:justify-start pb-6"
+              >
+                <FaPhoneVolume className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
+                <span className="text-white">647-449-9512</span>
+              </a>
             </div>
-            <div className="lg:text-lg text-sm flex gap-2 items-center justify-center lg:justify-start pb-6">
-              <IoIosMail className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
-              <p className="text-white">primeconcretetoronto@gmail.com</p>
+            <div className="">
+              {/* <IoIosMail className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
+              <p className="text-white">primeconcretetoronto@gmail.com</p> */}
+
+              <a
+                href="mailto:primeconcretetoronto@gmail.com"
+                className="lg:text-lg text-sm flex gap-2 items-center justify-center lg:justify-start pb-6"
+              >
+                <IoIosMail className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
+                <span className="text-white">
+                  primeconcretetoronto@gmail.com
+                </span>
+              </a>
             </div>
             <div className="flex lg:gap-8 gap-3 justify-center lg:justify-start mb-12">
               <FaFacebook className="fill-white lg:w-6 lg:h-6 w-auto h-auto" />
@@ -110,7 +128,7 @@ export default function ContactHome() {
                 </label>
                 <input
                   className="w-full field__style shadow-sm p-3 text-sm"
-                  placeholder="+8801700000000"
+                  placeholder="+1 123 123 1234"
                   type="tel"
                   id="phone"
                 />
