@@ -35,31 +35,61 @@ const breakpoints = {
   },
 };
 
-const testimonials = [
+const reviews = [
   {
-    text: "I cannot express enough how delighted I am with the exceptional service provided by this company. Despite our tight budget constraints, they approached our project with ingenuity and professionalism. ",
-    author: "Lisa Silva",
-    location: "London",
+    text: "Prime Concrete Pumping exceeded my expectations! Their team in Toronto provided prompt and professional service for our project. The concrete pump truck was top-notch, and they answered all our questions about how the process works. Highly recommend!",
+    author: "Samantha Garcia",
+    location: "Toronto",
   },
   {
-    text: "I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius cost-saving suggestion that we pulled off effortlessly. Huge thanks.",
-    author: "Nuan Projip",
-    location: "North York",
+    text: "Prime Concrete Pumping is the go-to company for concrete pumping in Toronto. Their team was punctual, knowledgeable, and professional. The concrete pump truck worked perfectly, and the cost was reasonable. I highly recommend them for any concrete pumping needs!",
+    author: "Daniel Taylor",
+    location: "Toronto",
   },
   {
-    text: "I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius most genius cost-saving suggestion that we pulled off effortlessly.",
-    author: "Alex ross",
-    location: "Barling",
+    text: "I'm impressed with the professionalism and efficiency of Prime Concrete Pumping. Their team in Toronto provided top-notch service for our project. They explained how the concrete pump works and answered all our questions. Would definitely use them again!",
+    author: "Jennifer Martinez",
+    location: "Toronto",
   },
   {
-    text: "I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius most genius cost-saving suggestion that we pulled off effortlessly.",
-    author: "Alex ross",
-    location: "Barling",
+    text: "Prime Concrete Pumping provided exceptional service for our project in Toronto. The concrete pump truck was in excellent condition, and their operators were knowledgeable and professional. The cost was reasonable, and the results were excellent. Highly recommend!",
+    author: "Robert Wilson",
+    location: "Barrie",
   },
   {
-    text: "I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius most genius cost-saving suggestion that we pulled off effortlessly.",
-    author: "Alex ross",
-    location: "Barling",
+    text: "I had a great experience with Prime Concrete Pumping in Toronto. Their team was friendly, reliable, and highly skilled. They explained how the concrete pump works and made sure everything was done safely and efficiently. I would definitely recommend them to others.",
+    author: "Jessica Davis",
+    location: "Barrie",
+  },
+  {
+    text: "Prime Concrete Pumping in Toronto is fantastic! We used their services for our construction project, and they delivered excellent results. The concrete pump truck operated flawlessly, and the team provided great customer service. Will definitely use them again!",
+    author: "David Jones",
+    location: "Barrie",
+  },
+  {
+    text: "I can't say enough good things about Prime Concrete Pumping. Their team in Toronto was professional, knowledgeable, and efficient. The concrete pump rental process was easy, and the cost was very competitive. I highly recommend them for any concrete pumping needs!",
+    author: "Sarah Brown",
+    location: "Toronto",
+  },
+  {
+    text: "Prime Concrete Pumping is the best in Toronto! Their team provided excellent service for our project, and their concrete pump trucks are top-of-the-line. They were able to answer all our questions about how the equipment works and ensured everything ran smoothly. 5 stars!",
+    author: "Michael Williams",
+    location: "Barrie",
+  },
+  {
+    text: "I recently used Prime Concrete Pumping for a job in Toronto, and I'm extremely satisfied with their service. The concrete pump truck arrived on time, the operators were skilled and efficient, and the whole process was smooth. Highly recommend them for any concrete pumping needs!",
+    author: "Emily Johnson",
+    location: "Toronto",
+  },
+  {
+    text: "We rented a concrete pump from Prime Concrete Pumping for our construction project in Toronto, and we couldn't be happier with the service. The team was knowledgeable, the equipment was in great condition, and the cost was very reasonable. Will definitely use them again!",
+    author: "James Smith",
+    location: "Barrie",
+  },
+  {
+    text: "Prime Concrete Pumping exceeded my expectations! Their team in Toronto provided prompt and professional service for our project. The concrete pump truck was top-notch, and they answered all our questions about how the process works. Highly recommend!",
+    author: "Samantha Garcia",
+    location: "Toronto",
   },
 ];
 
@@ -91,7 +121,7 @@ const Review = () => {
           allowTouchMove={false}
           breakpoints={breakpoints}
         >
-          {testimonials.map((test, i) => (
+          {reviews.map((review, i) => (
             <SwiperSlide key={i}>
               <div className="bg-[#D9D9D980] rounded-lg shadow-md p-[13px] ">
                 <div>
@@ -144,10 +174,12 @@ const Review = () => {
                   </svg>
                 </div>
                 <p className="text-sm text-gray-800 py-3 3xl:text-[14px] ">
-                  {test.text}
+                  {review?.text}
                 </p>
-                <h6 className="font-semibold text-gray-900 ">{test.author}</h6>
-                <p className="text-gray-600 text-xs ">{test.location}</p>
+                <h6 className="font-semibold text-gray-900 ">
+                  {review?.author}
+                </h6>
+                <p className="text-gray-600 text-xs ">{review?.location}</p>
               </div>
             </SwiperSlide>
           ))}

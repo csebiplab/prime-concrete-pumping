@@ -6,8 +6,8 @@ import "../globals.css"
 const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Prime Concrete",
-  description: "Prime Concrete description",
+  title: "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
+  description: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
 };
 
 export default function RootLayout({ children }) {
