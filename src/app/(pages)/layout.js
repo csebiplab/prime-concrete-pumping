@@ -4,6 +4,7 @@ import Header from "@/components/layouts/Header/Header";
 import "../globals.css"
 
 import localFont from 'next/font/local'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // import "../../../public/Fontin-Regular.woff"
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="AW-16550180504" />
     </html>
   );
 }
