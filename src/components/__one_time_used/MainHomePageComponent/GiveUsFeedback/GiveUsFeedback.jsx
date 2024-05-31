@@ -145,7 +145,7 @@ export default function ContactHome() {
                 placeholder="Write Message"
                 rows="6"
                 id="message"
-              ></textarea>
+              />
             </div>
 
             <div className="flex justify-center md:justify-start">
