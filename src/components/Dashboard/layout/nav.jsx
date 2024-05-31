@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icons } from "./icons";
 import { Icon } from "@iconify/react";
-import { dashboardConfig } from "@/constants/dashboard.menu";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ToggleTheme";
+import { dashboardConfig } from "@/constants/dashboard/dashboard.constants";
 
 export default function Nav() {
   return (
