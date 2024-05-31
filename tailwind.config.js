@@ -7,7 +7,7 @@ module.exports = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}"
+    "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: ["class"],
   theme: {
@@ -83,6 +83,31 @@ module.exports = withMT({
           200: "#434343",
           300: "#535455",
           400: "#333333",
+        },
+
+
+
+        "gray-1": "var(--gray-1)",
+        "gray-2": "var(--gray-2)",
+        "gray-3": "var(--gray-3)",
+        background: "var(--background-color)",
+        foreground: "var(--foreground)",
+
+        tremor: {
+          background: {
+            DEFAULT: "var(--background-color)",
+          },
+          border: {
+            DEFAULT: "var(--gray-2)",
+          },
+          ring: {
+            DEFAULT: "var(--gray-2)",
+          },
+          content: {
+            subtle: "var(--gray-2)",
+            DEFAULT: "var(--gray-1)",
+            emphasis: "var(--foreground)",
+          },
         },
       },
     },
