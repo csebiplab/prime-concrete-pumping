@@ -18,7 +18,7 @@ function CreateBlog({ id, data }) {
 
   // console.log(id, data)
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_LIVE_API
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
 
   useEffect(() => {
     if (data) {

@@ -19,7 +19,7 @@ function SiteVerificationComponent({
     url: "",
   });
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_LIVE_API;
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
     setInputValue({

@@ -93,7 +93,7 @@ const HomeBanner = () => {
                     type="text"
                     placeholder="Message"
                     className="py-2 px-7"
-                  ></textarea>
+                  />
 
                   <div className="flex justify-center">
                     <button

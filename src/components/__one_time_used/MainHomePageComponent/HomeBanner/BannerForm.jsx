@@ -36,7 +36,7 @@ const BannerForm = () => {
             type="text"
             placeholder="Message"
             className="h-[50px] px-7"
-          ></textarea>
+          />
         </form>
         <div className="flex justify-center">
           <CommonButton text="Book Now" />

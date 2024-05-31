@@ -11,7 +11,7 @@ function CreateCategory({ id, data }) {
     description: "",
   });
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_LIVE_API
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
 
   const handleInputChange = (eventKey, e) => {
     setInputValue((prevInputValue) => ({

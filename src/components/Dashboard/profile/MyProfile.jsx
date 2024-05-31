@@ -65,7 +65,8 @@ const MyProfile = ({ user }) => {
     <div>
       <div>
         <p className="text-3xl">
-          <span className="font-bold">User Name:</span> <span>{user.name}</span>
+          <span className="font-bold">User Name:</span>{" "}
+          <span>{user?.name}</span>
         </p>
         {!isUpdating && (
           <button

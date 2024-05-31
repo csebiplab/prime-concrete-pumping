@@ -6,7 +6,6 @@ import { toast } from "react-toastify";
 import { HiPencilAlt } from "react-icons/hi";
 import RemoveBtn from "./RemoveBtn";
 
-
 const ShareComponent = ({
   editPath,
   blogRouteAllMetaData,
@@ -23,7 +22,7 @@ const ShareComponent = ({
     keywords: "",
   });
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_LIVE_API
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
     setInputValue({
@@ -32,21 +31,22 @@ const ShareComponent = ({
       keywords: keywordsValue,
     });
   }, [id]);
+
   const handleTitleChange = (e) => {
     setInputValue((prevInputValue) => ({
       ...prevInputValue,
       title: e.target.value,
     }));
   };
+
   const handleDescriptionChange = (e) => {
-    // Update the inputValue state when the input value changes
     setInputValue((prevInputValue) => ({
       ...prevInputValue,
       description: e.target.value,
     }));
   };
+
   const handleKeywordChange = (e) => {
-    // Update the inputValue state when the input value changes
     setInputValue((prevInputValue) => ({
       ...prevInputValue,
       keywords: e.target.value,
@@ -57,16 +57,13 @@ const ShareComponent = ({
     if (id) {
       let { title, description, keywords } = inputValue;
       try {
-        const res = await fetch(
-          `${baseAPIUrl}/api/${endPoints}/${id}`,
-          {
-            method: "PUT",
-            headers: {
-              "Content-type": "application/json",
-            },
-            body: JSON.stringify({ title, description, keywords }),
-          }
-        );
+        const res = await fetch(`${baseAPIUrl}/api/${endPoints}/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({ title, description, keywords }),
+        });
         if (!res.ok) {
           toast(`Failed to update ${endPoints} metaData`);
         }
@@ -142,12 +139,13 @@ const ShareComponent = ({
                     name="description"
                     id="description"
                     autoComplete="family-name"
-                    className="block lg:w-4/6 w-full px-5  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block lg:w-4/6 w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     value={inputValue.description}
                     onChange={handleDescriptionChange}
                   />
                 </div>
               </div>
+
               <div className="col-span-full">
                 <label
                   htmlFor="keyword"
@@ -160,8 +158,7 @@ const ShareComponent = ({
                     id="keyword"
                     name="keyword"
                     rows={3}
-                    className="block w-full px-5  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    defaultValue={""}
+                    className="block w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     value={inputValue.keywords}
                     onChange={handleKeywordChange}
                   />
