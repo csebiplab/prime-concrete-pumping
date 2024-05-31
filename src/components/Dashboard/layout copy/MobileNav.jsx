@@ -4,13 +4,13 @@ import { Icons } from "./icons";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { dashboardConfig } from "@/constants/dashboard.menu";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./DropDownMenu";
-import { dashboardConfig } from "@/constants/dashboard/dashboard.constants";
 
 export default function MobileNav() {
   const pathname = usePathname();

@@ -4,6 +4,8 @@ import "./Dashboard.css"
 import { Ubuntu } from "next/font/google";
 import ThemeProvider from "@/components/Dashboard/layout/ThemeProvider";
 import Nav from "@/components/Dashboard/layout/nav";
+import DashboardShell from "@/components/Dashboard/layout/shell";
+import DashboardHeader from "@/components/Dashboard/layout/DashboardHeader";
 
 const ubuntu = Ubuntu({
     subsets: ["latin"],
@@ -28,10 +30,10 @@ export default async function DashboardLayout({ children }) {
                             <Nav />
                         </aside>
                         <main className="flex-1 bg-gray-3 border border-gray-2  rounded-lg  max-h-screen overflow-auto pb-5 ">
-                            {/* <DashboardShell> */}
-                            {/* <DashboardHeader title={""} /> */}
-                            {children}
-                            {/* </DashboardShell> */}
+                            <DashboardShell>
+                                <DashboardHeader title={""} />
+                                {children}
+                            </DashboardShell>
                         </main>
                         <ToastContainer position="top-center" />
                     </div>
