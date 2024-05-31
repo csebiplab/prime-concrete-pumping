@@ -16,10 +16,66 @@ const Fontin = localFont({
 
 // const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
-  description: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
-};
+export async function generateMetadata() {
+  try {
+    const [metaDataResponse, googleVerificationResponse] = await Promise.all([
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verificationUrl`),
+    ]);
+
+    if (!metaDataResponse.ok || !googleVerificationResponse.ok) {
+      console.error('Network response was not ok');
+    }
+
+    const metaData = await metaDataResponse.json();
+    const googleVerification = await googleVerificationResponse.json();
+
+    const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
+
+    const {
+      title = "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
+      description = "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+      keywords = "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+
+    } = metaData?.homeRouteAllMetaData?.[0] || {};
+
+    return {
+      title,
+      description,
+      keywords,
+      verification: {
+        google: googleConsoleKey,
+      }
+    };
+  } catch (error) {
+    console.error('Error fetching metadata:', error);
+    return {
+      title: "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
+      description: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+      keywords: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+    };
+  }
+}
+
+function extractGoogleConsoleKey(googleVerification) {
+  try {
+    const { verificationUrl } = googleVerification ?? {};
+    if (!verificationUrl || !verificationUrl[0]?.title) return "";
+    const metaTagContent = verificationUrl[0].title;
+    const consoleKey = metaTagContent.split("=").pop().slice(1, -4);
+    return consoleKey;
+  } catch (error) {
+    console.error('Error extracting Google console key:', error);
+    return "";
+  }
+}
+
+
+// export const metadata = {
+//   title: "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
+//   description: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+//   keywords: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+// };
 
 export default function RootLayout({ children }) {
   return (
