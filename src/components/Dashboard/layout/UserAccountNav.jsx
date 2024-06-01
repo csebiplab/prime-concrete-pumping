@@ -27,7 +27,7 @@ export default function UserAccountNav({ user }) {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <div className="text-md p-2 flex flex-col">
-          <Link href="/dashboard/profile">
+          <Link href="/dashboard/admin/profile">
             {user?.name && getCapitalLettersOfName(user?.name)}
           </Link>
         </div>

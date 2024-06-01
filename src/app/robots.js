@@ -8,6 +8,6 @@ export default function robots() {
             },
 
         ],
-        sitemap: 'https://prime-concrete-pumping.vercel.app/sitemap.xml',
+        sitemap: 'https://primeconcretepumping.ca/sitemap.xml',
     }
 }
