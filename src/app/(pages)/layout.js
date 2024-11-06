@@ -1,5 +1,5 @@
 import Footer from "@/components/layouts/Footer/Footer";
-import Header from "@/components/layouts/Header/Header";
+// import Header from "@/components/layouts/Header/Header";
 // import { Roboto_Slab } from "next/font/google";
 import "../globals.css"
 
@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={Fontin.className}>
       <body >
-        <Header />
+        {/* <Header /> */}
         <NewHeader/>
         {children}
         <Footer />
