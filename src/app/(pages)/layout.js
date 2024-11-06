@@ -5,6 +5,7 @@ import "../globals.css"
 
 import localFont from 'next/font/local'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { NewHeader } from "@/components/layouts/NewHeader/NewHeader";
 
 // import "../../../public/Fontin-Regular.woff"
 
@@ -82,6 +83,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={Fontin.className}>
       <body >
         <Header />
+        <NewHeader/>
         {children}
         <Footer />
       </body>
