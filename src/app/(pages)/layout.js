@@ -1,10 +1,11 @@
 import Footer from "@/components/layouts/Footer/Footer";
-import Header from "@/components/layouts/Header/Header";
+// import Header from "@/components/layouts/Header/Header";
 // import { Roboto_Slab } from "next/font/google";
 import "../globals.css"
 
 import localFont from 'next/font/local'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { NewHeader } from "@/components/layouts/NewHeader/NewHeader";
 
 // import "../../../public/Fontin-Regular.woff"
 
@@ -81,7 +82,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={Fontin.className}>
       <body >
-        <Header />
+        {/* <Header /> */}
+        <NewHeader/>
         {children}
         <Footer />
       </body>

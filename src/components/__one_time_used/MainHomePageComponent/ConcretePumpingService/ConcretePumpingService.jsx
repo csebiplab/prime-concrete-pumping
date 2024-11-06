@@ -9,7 +9,7 @@ const ConcretePumpingService = () => {
     <div className="">
       <div className="custom-container px-4 md:px-0 mb-[60px] grid grid-cols-1 md:grid-cols-8 md:gap-4">
         <div
-          className="order-1 md:order-2 md:col-span-4 card__onImg  border-2 shadow-md md:rounded-xl xs:rounded-t-xl z-50 5xl:ml-[285px] 4xl:ml-[200px] 3xl:ml-[180px] 2xl:ml-[130px] xl:ml-[90px] lg:ml-[50px]
+          className="order-1 md:order-2 md:col-span-4 card__onImg  border-2 shadow-md md:rounded-xl xs:rounded-t-xl z-10 5xl:ml-[285px] 4xl:ml-[200px] 3xl:ml-[180px] 2xl:ml-[130px] xl:ml-[90px] lg:ml-[50px]
           md:w-[520px] lg:w-[700px] xl:w-[750px] 2xl:w-[780px] 3xl:w-[800px] 4xl:w-[900px] 5xl:w-[925px] my-0 md:my-12 lg:my-16 3xl:my-20 px-6 py-7"
         >
           <div className="flex flex-col">

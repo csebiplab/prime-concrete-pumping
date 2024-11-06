@@ -48,7 +48,7 @@ module.exports = withMT({
       colors: {
         primary: {
           DEFAULT: "#F43939",
-          50: "#F43939",
+          50: "#1E252B",
           100: "#F43939",
           200: "#F43939",
           300: "#F43939",
