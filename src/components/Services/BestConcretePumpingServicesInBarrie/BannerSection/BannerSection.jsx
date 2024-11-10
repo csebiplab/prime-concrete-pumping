@@ -20,9 +20,9 @@ const BannerSection = () => {
     <div className="container home-banner py-20 flex justify-between items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-12">
         <div>
-          <h1 className="text-4xl lg:text-5xl 3xl:text-[55px] 4xl:text-[60px] 5xl:text-[65px] !font-medium">
+          <h1 className="text-4xl lg:text-5xl 3xl:text-[55px] 4xl:text-[60px] 5xl:text-[65px] font-bold">
           Best Concrete Pumping
-            <span className="text-primary">Services in Barrie</span>
+            <span className="text-primary"> Services in Barrie</span>
           </h1>
           <h3 className="text-lg font-medium leading-[194%] pt-6 pb-14">
           Prime Concrete Pumping is a reliable, efficient, and trusted choice for concrete pumping services in Barrie.
