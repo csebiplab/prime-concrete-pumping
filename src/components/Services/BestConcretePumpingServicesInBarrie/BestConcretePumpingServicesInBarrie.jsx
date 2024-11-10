@@ -4,6 +4,11 @@ import OurServiceAreas from "@/components/__one_time_used/MainHomePageComponent/
 import GiveUsFeedback from "@/components/__one_time_used/MainHomePageComponent/GiveUsFeedback/GiveUsFeedback";
 import AboutUs from "./AboutUs/AboutUs";
 import OurServices from "./OurServices/OurServices";
+import Experts from "./Experts/Experts";
+import WeNeedBusiness from "./WeNeedBusiness/WeNeedBusiness";
+import TrustyCompany from "./TrustyCompany/TrustyCompany";
+import Cost from "./Cost/Cost";
+import ReadyToStart from "./ReadyToStart/ReadyToStart";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -18,6 +23,26 @@ const BestConcretePumpingServicesInBarrie = () => {
 
       <section>
         <OurServices />
+      </section>
+
+      <section>
+        <Experts />
+      </section>
+
+      <section>
+        <WeNeedBusiness />
+      </section>
+
+      <section>
+        <TrustyCompany />
+      </section>
+
+      <section>
+        <Cost />
+      </section>
+
+      <section>
+        <ReadyToStart />
       </section>
 
       <section>
