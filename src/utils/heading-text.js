@@ -1,4 +1,5 @@
 export const headingIconText = {
+    // home page 
     aboutUs__IconText: "About Us",
     knowAboutConcretePumping__IconText: "Know About Concrete Pumping",
     workStyle__IconText: "Works Style",
@@ -21,5 +22,23 @@ export const headingIconText = {
     hire__IconText: "Hire For Installation Services ",
     joinUs__IconText: "Join With Us",
     Benefits__IconText: "Benefits with Easy Pools",
+
+    // Best Concrete Pumping Services in Barrie page 
+
+    aboutUs__headingIconText : "About Us",
+    ourServices__headingIconText : "Our Services",
+    materials__headingIconText : "Materials",
+    expertInBarrie__headingIconText : "Experts in Barrie",
+    expertWork__headingIconText : "Experts Work",
+    gallery__headingIconText : "Gallery",
+    weLeadBusiness__headingIconText : "We Lead Business",
+    trustyCompany__headingIconText : "Trusty Company",
+    considerations__headingIconText : "Considerations",
+    reviews__headingIconText : "Reviews",
+    cost__headingIconText : "Cost",
+    hireUs__headingIconText : "Hire Us",
+    readyToStartProject__headingIconText : "Ready to Start Project",
+    faq__headingIconText : "FAQ",
+    servicesArea__headingIconText : "Services Area",
 
 }

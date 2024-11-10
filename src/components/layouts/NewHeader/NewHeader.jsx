@@ -17,7 +17,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import UpperNavbar from "./NewUpperHeader";
+import NewUpperHeader from "./NewUpperHeader";
 import "./NewHeader.css";
 
 // our services nav menu
@@ -195,8 +195,8 @@ export function NewHeader() {
 
   return (
     <>
-      <UpperNavbar />
-      <header className="sticky top-0 z-50">
+      <NewUpperHeader />
+      <header className="sticky top-0 z-50 ">
         <div className="custom-container main__nav">
           <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
