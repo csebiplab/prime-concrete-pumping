@@ -10,6 +10,7 @@ import TrustyCompany from "./TrustyCompany/TrustyCompany";
 import Cost from "./Cost/Cost";
 import ReadyToStart from "./ReadyToStart/ReadyToStart";
 import Faq from "./Faq/Faq";
+import HireUs from "./HireUs/HireUs";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -40,6 +41,10 @@ const BestConcretePumpingServicesInBarrie = () => {
 
       <section>
         <Cost />
+      </section>
+
+      <section>
+        <HireUs />
       </section>
 
       <section>
