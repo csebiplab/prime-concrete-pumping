@@ -9,6 +9,7 @@ import WeNeedBusiness from "./WeNeedBusiness/WeNeedBusiness";
 import TrustyCompany from "./TrustyCompany/TrustyCompany";
 import Cost from "./Cost/Cost";
 import ReadyToStart from "./ReadyToStart/ReadyToStart";
+import Faq from "./Faq/Faq";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -43,6 +44,10 @@ const BestConcretePumpingServicesInBarrie = () => {
 
       <section>
         <ReadyToStart />
+      </section>
+
+      <section>
+        <Faq />
       </section>
 
       <section>
