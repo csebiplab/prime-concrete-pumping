@@ -32,7 +32,7 @@ const BannerSection = () => {
             onClick={handleOpen}
             className="bg-primary px-[34px] py-[10px] flex justify-center items-center rounded-md"
           >
-            <span className="text-white text-lg font-medium">
+            <span className="text-white text-base 5xl:text-lg font-medium">
               Get An Estimate
             </span>
             {/* <svg

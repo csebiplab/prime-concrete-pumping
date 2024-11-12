@@ -15,6 +15,7 @@ import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import Considerations from "./Considerations/Considerations";
 import Review from "./Review/Review";
 import ExpertsWork from "./ExpertsWork/ExpertsWork";
+import Materials from "./Materials/Materials";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -29,6 +30,10 @@ const BestConcretePumpingServicesInBarrie = () => {
 
       <section>
         <OurServices />
+      </section>
+
+      <section>
+        <Materials />
       </section>
 
       <section>
