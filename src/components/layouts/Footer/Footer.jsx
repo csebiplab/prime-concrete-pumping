@@ -223,7 +223,7 @@ const Footer = () => {
                 <ul className="text-center md:text-start mx-auto">
                   <li>
                     <Link
-                      href=""
+                      href="location:Cedar Ave, Vaughan. L3T 3V9"
                       className="footer-link items-center justify-center md:justify-normal text-base text-white"
                     >
                       <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" /> 2a
