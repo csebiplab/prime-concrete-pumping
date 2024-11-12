@@ -12,6 +12,7 @@ import ReadyToStart from "./ReadyToStart/ReadyToStart";
 import Faq from "./Faq/Faq";
 import HireUs from "./HireUs/HireUs";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import Considerations from "./Considerations/Considerations";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -42,6 +43,10 @@ const BestConcretePumpingServicesInBarrie = () => {
 
       <section>
         <TrustyCompany />
+      </section>
+
+      <section>
+        <Considerations />
       </section>
 
       <section>
