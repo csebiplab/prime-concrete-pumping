@@ -10,6 +10,7 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 const BannerSection = () => {
   const [open, setOpen] = useState(false);
@@ -17,25 +18,28 @@ const BannerSection = () => {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <div className="container home-banner py-20 flex justify-between items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-12">
-        <div>
-          <h1 className="text-4xl lg:text-5xl 3xl:text-[55px] 4xl:text-[60px] 5xl:text-[65px] font-bold">
-          Best Concrete Pumping
-            <span className="text-primary"> Services in Barrie</span>
-          </h1>
-          <h3 className="text-lg font-medium leading-[194%] pt-6 pb-14">
-          Prime Concrete Pumping is a reliable, efficient, and trusted choice for concrete pumping services in Barrie.
-          </h3>
-          {/* <CommonButton text="Get An Estimate" /> */}
-          <Button
-            onClick={handleOpen}
-            className="bg-primary px-[34px] py-[10px] flex justify-center items-center rounded-md"
-          >
-            <span className="text-white text-base 5xl:text-lg font-medium">
-              Get An Estimate
-            </span>
-            {/* <svg
+    <div>
+      {/* large device  */}
+      <div className="hidden md:block container home-banner py-20 flex justify-between items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-12">
+          <div>
+            <h1 className="text-4xl lg:text-5xl 3xl:text-[55px] 4xl:text-[60px] 5xl:text-[65px] font-bold">
+              Best Concrete Pumping
+              <span className="text-primary"> Services in Barrie</span>
+            </h1>
+            <h3 className="text-lg font-medium leading-[194%] pt-6 pb-14">
+              Prime Concrete Pumping is a reliable, efficient, and trusted
+              choice for concrete pumping services in Barrie.
+            </h3>
+            {/* <CommonButton text="Get An Estimate" /> */}
+            <Button
+              onClick={handleOpen}
+              className="bg-primary px-[34px] py-[10px] flex justify-center items-center rounded-md"
+            >
+              <span className="text-white text-base 5xl:text-lg font-medium">
+              <Link className="text-white" href="tel:647-449-9512">Get An Estimate</Link>
+              </span>
+              {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="7"
               height="12"
@@ -48,59 +52,59 @@ const BannerSection = () => {
                 fill="white"
               />
             </svg> */}
-          </Button>
+            </Button>
 
-          <>
-            <Dialog
-              open={open}
-              handler={handleOpen}
-              size={"xs"}
-              className="banner__form w-full pt-9 px-12"
-            >
-              {/* <div className="banner__form w-full py-9 px-7"> */}
-              <div>
-                <p className="text-2xl text-white font-medium mb-6">
-                  Request Pumping
-                  <br />
-                  assistance today
-                </p>
-                <form className="flex flex-col gap-5 mb-9">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="py-2 px-7"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Your Email"
-                    className="py-2 px-7"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Service Type"
-                    className="py-2 px-7"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Your Phone"
-                    className="py-2 px-7"
-                  />
-                  <textarea
-                    type="text"
-                    placeholder="Message"
-                    className="py-2 px-7"
-                  />
+            <>
+              <Dialog
+                open={open}
+                handler={handleOpen}
+                size={"xs"}
+                className="banner__form w-full pt-9 px-12"
+              >
+                {/* <div className="banner__form w-full py-9 px-7"> */}
+                <div>
+                  <p className="text-2xl text-white font-medium mb-6">
+                    Request Pumping
+                    <br />
+                    assistance today
+                  </p>
+                  <form className="flex flex-col gap-5 mb-9">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      className="py-2 px-7"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      className="py-2 px-7"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Service Type"
+                      className="py-2 px-7"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Your Phone"
+                      className="py-2 px-7"
+                    />
+                    <textarea
+                      type="text"
+                      placeholder="Message"
+                      className="py-2 px-7"
+                    />
 
-                  <div className="flex justify-center">
-                    <button
-                      type="input"
-                      disabled
-                      className="bg-primary px-[34px] py-[10px] flex justify-center items-center rounded-md"
-                    >
-                      <span className="text-white text-lg font-medium">
-                        Book Now
-                      </span>
-                      {/* <svg
+                    <div className="flex justify-center">
+                      <button
+                        type="input"
+                        disabled
+                        className="bg-primary px-[34px] py-[10px] flex justify-center items-center rounded-md"
+                      >
+                        <span className="text-white text-lg font-medium">
+                          Book Now
+                        </span>
+                        {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="7"
                         height="12"
@@ -113,54 +117,71 @@ const BannerSection = () => {
                           fill="white"
                         />
                       </svg> */}
-                    </button>
-                  </div>
-                </form>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                {/* </div> */}
+              </Dialog>
+            </>
+          </div>
+          <div className="banner__form w-atuo py-10 px-12 mr-4 hidden md:block">
+            <div>
+              <p className="text-2xl text-white font-medium mb-6">
+                Request Pumping
+                <br />
+                assistance today
+              </p>
+              <form className="flex flex-col gap-7 mb-9">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="h-[50px] px-7"
+                />
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  className="h-[50px] px-7"
+                />
+                <input
+                  type="text"
+                  placeholder="Service Type"
+                  className="h-[50px] px-7"
+                />
+                <input
+                  type="text"
+                  placeholder="Your Phone"
+                  className="h-[50px] px-7"
+                />
+                <input
+                  type="text"
+                  placeholder="Message"
+                  className="h-[50px] px-7"
+                />
+              </form>
+              <div className="flex justify-center">
+                <CommonButton text="Book Now" />
               </div>
-              {/* </div> */}
-            </Dialog>
-          </>
-        </div>
-        <div className="banner__form w-atuo py-10 px-12 mr-4 hidden md:block">
-          <div>
-            <p className="text-2xl text-white font-medium mb-6">
-              Request Pumping
-              <br />
-              assistance today
-            </p>
-            <form className="flex flex-col gap-7 mb-9">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="h-[50px] px-7"
-              />
-              <input
-                type="text"
-                placeholder="Your Email"
-                className="h-[50px] px-7"
-              />
-              <input
-                type="text"
-                placeholder="Service Type"
-                className="h-[50px] px-7"
-              />
-              <input
-                type="text"
-                placeholder="Your Phone"
-                className="h-[50px] px-7"
-              />
-              <input
-                type="text"
-                placeholder="Message"
-                className="h-[50px] px-7"
-              />
-            </form>
-            <div className="flex justify-center">
-              <CommonButton text="Book Now" />
             </div>
           </div>
         </div>
       </div>
+      {/* large device end  */}
+      {/* small device start  */}
+      <div className="block md:hidden small_device_bg px-[30px] py-[90px]">
+            <h1 className="text-[40px] font-bold leading-[50px] text-primary mb-[5px]">Best Concrete <br/> Pumping <br/>
+            <span className="text-primary-50">Services in Barrie</span></h1>
+            <p className="text-[20px] font-medium text-primary-50 leading-[35px]">Prime Concrete Pumping is a reliable, efficient, and trusted choice for concrete pumping services in Barrie.</p>
+            <Button
+              onClick={handleOpen}
+              className="bg-primary px-[33px] py-[10px] flex justify-center items-center rounded-md mt-[35px]"
+            >
+              <span className="text-white text-base 5xl:text-lg font-medium">
+                <Link className="text-white"  href="tel:647-449-9512">Get An Estimate</Link>
+              </span>
+            </Button>
+      </div>
+      {/* small device end  */}
     </div>
   );
 };
