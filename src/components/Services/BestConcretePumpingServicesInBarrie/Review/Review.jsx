@@ -1,7 +1,5 @@
 "use client";
 import { useRef } from 'react';
-import google from "../../../../../public/homePage/google.png";
-import review from "../../../../../public/homePage/review.png";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -12,9 +10,8 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./ReviewSlider.css";
 import { SwiperNavButtons } from "./SwiperSliderButton";
-import HeadingIcon from '@/utils/HeadingIcon';
-import { headingTexts } from '@/utils/heading-text';
-// import { review } from '@/components/__home_components/Images/review.png';
+import HeadingIcon from '@/components/ui/HeadingIcon';
+import { headingIconText } from '@/utils/heading-text';
 
 const breakpoints = {
   0: {
@@ -30,37 +27,37 @@ const breakpoints = {
 const reviews = [
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over",
     author: "Lisa Silva",
     address: "North York",
   },
@@ -74,11 +71,11 @@ const Review = () => {
         <div className="">
           <div className="text-center">
             <div className="flex justify-center items-center">
-            <HeadingIcon text={headingTexts.reviews__headingIconText}/>
+            <HeadingIcon text={headingIconText.reviews__headingIconText}/>
             </div>
-            <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[30px] 2xl:text-[32px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] font-bold leading-[30px] md:leading-[40px] text-dark text-center mt-[5px] mb-[25px]">
-            Reviews  Toronto Ready Mix
-            </h2>
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary-50 font-bold leading-normal text-center mb-[25px]">
+            Here's what to expect <span className="text-primary">when you hire us</span>
+          </h2>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper
@@ -101,14 +98,14 @@ const Review = () => {
               >
                 <div className="card_bg py-[14px] px-[12px]">
                   <Image
-                    src={google}
+                    src="/assets/best_concrete_pumping_services/review.png"
                     width={90}
                     height={51}
                     alt="google"
                     className="mb-[10px]"
                   />
                   <Image
-                    src={review}
+                    src="/assets/best_concrete_pumping_services/star.png"
                     width={120}
                     height={17}
                     alt="five star"

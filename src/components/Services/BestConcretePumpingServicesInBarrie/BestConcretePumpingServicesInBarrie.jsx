@@ -13,6 +13,7 @@ import Faq from "./Faq/Faq";
 import HireUs from "./HireUs/HireUs";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import Considerations from "./Considerations/Considerations";
+import Review from "./Review/Review";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -47,6 +48,10 @@ const BestConcretePumpingServicesInBarrie = () => {
 
       <section>
         <Considerations />
+      </section>
+
+      <section>
+        <Review />
       </section>
 
       <section>
