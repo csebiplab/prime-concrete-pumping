@@ -75,9 +75,9 @@ const Faq = () => {
         <HeadingIcon text={headingIconText.faq__headingIconText}/>
 
           <div>
-            <h2 className="ext-[25px] md:text-[27px] lg:text-[29px] xl:text-[30px] 2xl:text-[32px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] font-bold leading-[30px] md:leading-[40px] text-dark text-center mt-[5px]">
+            <h6 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[30px] 2xl:text-[32px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] font-bold leading-[30px] md:leading-[40px] text-dark text-center mt-[5px]">
             <span className="text-primary">FAQ</span> for Prime Concrete Pumping Barrie
-            </h2>
+            </h6>
           </div>
         </div>
       </div>

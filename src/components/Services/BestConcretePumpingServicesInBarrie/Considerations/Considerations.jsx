@@ -93,9 +93,9 @@ const Considerations = () => {
       <div className="container padding__top">
         <div className="flex flex-col items-center justify-center">
         <HeadingIcon text={headingIconText.considerations__headingIconText}/>
-          <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary-50 font-bold leading-normal text-center">
+          <h4 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary-50 font-bold leading-normal text-center">
           Considerations to Choose the <span className="text-primary">Best Pumping Company</span>
-          </h2>
+          </h4>
           <p className="text-lg text-primary-50 font-medium leading-[40px] text-center mt-[10px]">
           Choosing the best concrete pumping company involves several considerations to ensure efficiency, reliability, and cost-effectiveness. Here are key factors to weigh:  By carefully considering these factors, you can select a pumping company that meets your specific needs and delivers reliable, efficient service.
           </p>

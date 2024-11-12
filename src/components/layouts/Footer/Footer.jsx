@@ -177,8 +177,8 @@ const footerIcon = [
 const Footer = () => {
   return (
     <div className="">
-      <div className="footer__bg px-5 lg:px-[35px] !text-white">
-        <footer className="container !z-50 py-8 5xl:py-10 text-white">
+      <div className="footer__bg container px-5 lg:px-[35px] !text-white">
+        <footer className=" !z-50 py-8 5xl:py-10 text-white">
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[126px] justify-center">
               <div className="w-full lg:w-auto">
@@ -203,7 +203,7 @@ const Footer = () => {
                   key={index}
                   className="mt-5 md:mt-0 text-center md:text-start"
                 >
-                  <h3 className="text-white !text-xl mb-5">{category.cat}</h3>
+                  <p className="text-white !text-xl mb-5">{category.cat}</p>
                   <ul>
                     {category.links.map((link, idx) => (
                       <li key={idx} className="mb-6">
@@ -219,7 +219,7 @@ const Footer = () => {
               ))}
 
               <div className="w-full lg:w-auto text-center md:text-start">
-                <h3 className="text-white !text-xl my-5">Contact Us</h3>
+                <p className="text-white !text-xl my-5">Contact Us</p>
                 <ul className="text-center md:text-start mx-auto">
                   <li>
                     <Link
@@ -281,8 +281,8 @@ const Footer = () => {
       </div>
 
       {/* creater company credit */}
-      <div className="footer-bottom-bg">
-        <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
+      <div className="footer-bottom-bg container">
+        <div className=" flex flex-col lg:flex-row justify-between items-center py-2">
           <div className="flex justify-center items-center mb-2 lg:mb-0">
             <p className="text-xs md:text-base font-semibold text-white mr-[10px] lg:mr-4">
               WEBSITE DESIGN AND SEO BY :-

@@ -105,9 +105,9 @@ const HireUs = () => {
               </div>
 
               <div>
-                <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary font-bold leading-normal text-center md:text-left">
+                <h5 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary font-bold leading-normal text-center md:text-left">
                 Hire <span className="text-primary-50">the Perfect Pumping Service Provider</span>
-                </h2>
+                </h5>
               </div>
 
               <div>

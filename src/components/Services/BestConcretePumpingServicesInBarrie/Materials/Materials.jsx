@@ -18,7 +18,7 @@ const Materials = () => {
           />
         </div>
         <div className="md:col-span-3 z-30">
-          <div className="flex flex-col items-center md:items-start justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[10px] 2xl:mt-[23px] -ml-0 md:-ml-[80px]">
+          <div className="flex flex-col items-center md:items-start justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[10px] 2xl:mt-[23px] -ml-0 md:-ml-[80px] -mt-[25px] md:mt-0">
           <div>
                         <HeadingIcon text={headingIconText.materials__headingIconText}/>
                     </div>

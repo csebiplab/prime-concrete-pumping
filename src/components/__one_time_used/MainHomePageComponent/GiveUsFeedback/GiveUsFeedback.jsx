@@ -11,9 +11,9 @@ export default function ContactHome() {
       <div className="grid grid-cols-1 lg:grid-cols-6 items-center gap-x-10">
         <div className="order-2 lg:order-1 py-6 lg:py-16 px-6 lg:pl-[71px] lg:pr-2 lg:col-span-3 bg-primary text-white">
           <div className="">
-            <h2 className="text-lg lg:text-3xl text-white pb-[37px] text-center lg:text-start">
+            <p className="text-lg lg:text-3xl text-white pb-[37px] text-center lg:text-start">
               Contact Us
-            </h2>
+            </p>
             <div className="flex gap-2 items-center lg:text-lg text-sm justify-center lg:justify-start pb-6">
               <FaMapLocationDot className="fill-white lg:w-5 lg:h-5 w-auto h-auto" />
               <p className="text-white">2a Cedar Ave, Vaughan. L3T 3V9</p>
@@ -53,9 +53,9 @@ export default function ContactHome() {
 
             <div className="flex justify-center lg:justify-start">
               <div>
-                <h4 className="text-white text-xl lg:text-3xl">
+                <p className="text-white text-xl lg:text-3xl">
                   Concrete Pumping Contractors
-                </h4>
+                </p>
                 <div className="py-8">
                   <Image
                     src="/assets/images/footer-brand-img.png"
@@ -65,22 +65,22 @@ export default function ContactHome() {
                     className="w-[280px] h-[130px]"
                   />
                 </div>
-                <h4 className="text-white text-xl lg:text-3xl">
+                <p className="text-white text-xl lg:text-3xl">
                   Prime Concrete Pumping
-                </h4>
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="order-1 lg:order-2 rounded-lg p-5 lg:col-span-3 lg:p-12 items-center">
-          <h2 className="lg:mb-8 mb-5">Give Us Feedback </h2>
+          <p className="lg:mb-8 mb-5">Give Us Feedback </p>
           <form action="#" className="space-y-4 ">
             <div>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-8 mb-4">
                 <div>
                   {" "}
-                  <h5 className="mb-2">Your name *</h5>
+                  <p className="mb-2">Your name *</p>
                   <label className="sr-only" htmlFor="email">
                     name
                   </label>
@@ -93,7 +93,7 @@ export default function ContactHome() {
                 </div>
 
                 <div>
-                  <h5 className="mb-2">Email *</h5>
+                  <p className="mb-2">Email *</p>
                   <label className="sr-only" htmlFor="phone">
                     Phone
                   </label>
@@ -109,7 +109,7 @@ export default function ContactHome() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:mb-8 mb-4">
               <div>
-                <h5 className="mb-2">Subjects *</h5>
+                <p className="mb-2">Subjects *</p>
                 <label className="sr-only" htmlFor="email">
                   Email
                 </label>
@@ -122,7 +122,7 @@ export default function ContactHome() {
               </div>
 
               <div>
-                <h5 className="mb-2">Your Phone *</h5>
+                <p className="mb-2">Your Phone *</p>
                 <label className="sr-only" htmlFor="phone">
                   Phone
                 </label>
@@ -139,7 +139,7 @@ export default function ContactHome() {
               <label className="sr-only" htmlFor="message">
                 Message
               </label>
-              <h5 className="mb-2">Message *</h5>
+              <p className="mb-2">Message *</p>
               <textarea
                 className="w-full field__style shadow-sm p-4 text-sm"
                 placeholder="Write Message"

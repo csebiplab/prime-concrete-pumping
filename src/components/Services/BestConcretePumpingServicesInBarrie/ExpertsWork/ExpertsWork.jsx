@@ -49,9 +49,9 @@ const ExpertsWork = () => {
       <div className="container padding__top">
       <div className="flex flex-col items-center justify-center">
         <HeadingIcon text={headingIconText.expertWork__headingIconText}/>
-          <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary-50 font-bold leading-normal text-center">
+          <h3 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[35px] 5xl:text-[36px] text-primary-50 font-bold leading-normal text-center">
           How Do Our Barrie Concrete Pumping <span className="text-primary">Experts Work?</span>
-          </h2>
+          </h3>
           <p className="text-lg text-primary-50 font-medium leading-[40px] text-center mt-[10px]">
           Our Barrie concrete pumping experts work closely with clients to ensure a smooth and efficient process. Here's a breakdown of how we operate: By following these steps and working closely with our clients, our Barrie concrete pumping experts deliver exceptional results, meeting deadlines and exceeding expectations with every project.
           </p>
