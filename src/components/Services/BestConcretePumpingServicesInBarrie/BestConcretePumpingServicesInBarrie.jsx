@@ -9,6 +9,13 @@ import WeNeedBusiness from "./WeNeedBusiness/WeNeedBusiness";
 import TrustyCompany from "./TrustyCompany/TrustyCompany";
 import Cost from "./Cost/Cost";
 import ReadyToStart from "./ReadyToStart/ReadyToStart";
+import Faq from "./Faq/Faq";
+import HireUs from "./HireUs/HireUs";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import Considerations from "./Considerations/Considerations";
+import Review from "./Review/Review";
+import ExpertsWork from "./ExpertsWork/ExpertsWork";
+import Materials from "./Materials/Materials";
 
 const BestConcretePumpingServicesInBarrie = () => {
   return (
@@ -26,7 +33,19 @@ const BestConcretePumpingServicesInBarrie = () => {
       </section>
 
       <section>
+        <Materials />
+      </section>
+
+      <section>
         <Experts />
+      </section>
+
+      <section>
+        <ExpertsWork />
+      </section>
+
+      <section>
+        <ProjectGallery />
       </section>
 
       <section>
@@ -38,11 +57,27 @@ const BestConcretePumpingServicesInBarrie = () => {
       </section>
 
       <section>
+        <Considerations />
+      </section>
+
+      <section>
+        <Review />
+      </section>
+
+      <section>
         <Cost />
       </section>
 
       <section>
+        <HireUs />
+      </section>
+
+      <section>
         <ReadyToStart />
+      </section>
+
+      <section>
+        <Faq />
       </section>
 
       <section>

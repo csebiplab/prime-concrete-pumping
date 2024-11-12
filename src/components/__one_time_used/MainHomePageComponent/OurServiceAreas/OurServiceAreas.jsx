@@ -28,28 +28,62 @@ const breakpoints = {
     spaceBetween: 40,
   },
   1280: {
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 30,
   },
 };
 
 const maps = [
   {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369104.4793833133!2d-79.70773178910238!3d43.71826384376133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1711192683290!5m2!1sen!2sbd",
-    location: "Toronto",
+    title: "Toronto",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.67411467596!2d-79.54286835206918!3d43.71812279997104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731333598576!5m2!1sen!2sbd",
   },
   {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182566.4045222721!2d-79.8305378187556!3d44.35926624980187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa3371ad7206d%3A0x1d2e0f00a84b535a!2sBarrie%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1711192803692!5m2!1sen!2sbd",
-    location: "Barrie",
+    title: "Barrie",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91283.44626604003!2d-79.7481233253357!3d44.359109630568966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa3371ad7206d%3A0x1d2e0f00a84b535a!2sBarrie%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731333675764!5m2!1sen!2sbd",
   },
   {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92145.91175852313!2d-79.66673983224095!3d43.80274774858379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b257a9ad0b911%3A0xecea3dfb3abd0ac2!2sWoodbridge%2C%20Vaughan%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1711192847430!5m2!1sen!2sbd",
-    location: "Woodbridge",
+    title: "Woodbridge",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92146.1028615084!2d-79.6667384123388!3d43.802623849002906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b257a9ad0b911%3A0xecea3dfb3abd0ac2!2sWoodbridge%2C%20Vaughan%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731335202289!5m2!1sen!2sbd",
   },
   {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183980.1257805948!2d-79.5931173754818!3d43.90369790797781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a4936291733%3A0x5201760ad6b142ed!2sRichmond%20Hill%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1711192914194!5m2!1sen!2sbd",
-    location: "Richmond Hill",
+    title: "Richmond Hill",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91990.30790729084!2d-79.51070275565553!3d43.90353934483067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a4936291733%3A0x5201760ad6b142ed!2sRichmond%20Hill%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731335279989!5m2!1sen!2sbd",
   },
+  {
+    title: "Staten Island",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193981.64887657942!2d-74.31162963036931!3d40.56448849786039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245ef79f4d4e7%3A0x50271f8534babc78!2sStaten%20Island%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1731335339839!5m2!1sen!2sbd",
+  },
+  {
+    title: "Toronto",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.67411467596!2d-79.54286835206918!3d43.71812279997104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731333598576!5m2!1sen!2sbd",
+  },
+  {
+    title: "Barrie",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91283.44626604003!2d-79.7481233253357!3d44.359109630568966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa3371ad7206d%3A0x1d2e0f00a84b535a!2sBarrie%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731333675764!5m2!1sen!2sbd",
+  },
+  {
+    title: "Woodbridge",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92146.1028615084!2d-79.6667384123388!3d43.802623849002906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b257a9ad0b911%3A0xecea3dfb3abd0ac2!2sWoodbridge%2C%20Vaughan%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731335202289!5m2!1sen!2sbd",
+  },
+  {
+    title: "Richmond Hill",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91990.30790729084!2d-79.51070275565553!3d43.90353934483067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a4936291733%3A0x5201760ad6b142ed!2sRichmond%20Hill%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1731335279989!5m2!1sen!2sbd",
+  },
+  {
+    title: "Staten Island",
+    iframeSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193981.64887657942!2d-74.31162963036931!3d40.56448849786039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245ef79f4d4e7%3A0x50271f8534babc78!2sStaten%20Island%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1731335339839!5m2!1sen!2sbd",
+  }
 ];
 
 const OurServiceAreas = () => {
@@ -59,10 +93,10 @@ const OurServiceAreas = () => {
         <div className="mx-auto flex flex-col items-center justify-center">
           <HeadingIcon text={headingIconText.map__IconTxt} />
 
-          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-base md:text-xl lg:text-4xl text-center">
+          <h6 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-base md:text-xl lg:text-4xl text-center">
             <span className="text-primary">Service Area</span> of Concrete
             Plumbing in Toronto
-          </h3>
+          </h6>
         </div>
 
         {/* //   ======================= map Card ==================// */}
