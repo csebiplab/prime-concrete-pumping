@@ -1,93 +1,76 @@
 import Footer from "@/components/layouts/Footer/Footer";
-// import Header from "@/components/layouts/Header/Header";
-// import { Roboto_Slab } from "next/font/google";
+import localFont from 'next/font/local'
+import { NewHeader } from "@/components/layouts/NewHeader/NewHeader";
+import { headers } from "next/headers";
+import { projectfor } from "@/constants/projectfor";
+
 import "../globals.css"
 
-import localFont from 'next/font/local'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { NewHeader } from "@/components/layouts/NewHeader/NewHeader";
 
-// import "../../../public/Fontin-Regular.woff"
-
-// Font files can be colocated inside of `app`
 const Fontin = localFont({
   src: '../../../public/Fontin-Regular.woff',
   display: 'swap',
 })
 
-// const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
+export async function generateMetadata() {
 
-// export async function generateMetadata() {
-//   try {
-//     const [metaDataResponse, googleVerificationResponse] = await Promise.all([
-//       fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/home`),
-//       fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verificationUrl`),
-//     ]);
+  const headerList = headers();
+  const pathname = headerList.get("x-current-path");
+  const clientUrlWithPath = process.env.NEXT_PUBLIC_CLIENT_URL + pathname
 
-//     if (!metaDataResponse.ok || !googleVerificationResponse.ok) {
-//       console.error('Network response was not ok');
-//     }
+  try {
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-//     const metaData = await metaDataResponse.json();
-//     const googleVerification = await googleVerificationResponse.json();
+    const response = await fetch(`${apiUrl}/api/metadata?projectFor=${projectfor}&pageLink=${clientUrlWithPath}`, {
+      cache: "no-store",
+    });
+    const data = await response.json();
 
-//     const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
+    const { title, description, keywords } = data?.data[0] ?? {};
 
-//     const {
-//       title = "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
-//       description = "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
-//       keywords = "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
+    const gglverificationResponse = await fetch(`${apiUrl}/api/site-verification?projectFor=${projectfor}`, {
+      cache: "no-store",
+    });
 
-//     } = metaData?.homeRouteAllMetaData?.[0] || {};
+    const gVerificationData = await gglverificationResponse.json();
 
-//     return {
-//       title,
-//       description,
-//       keywords,
-//       verification: {
-//         google: googleConsoleKey,
-//       }
-//     };
-//   } catch (error) {
-//     console.error('Error fetching metadata:', error);
-//     return {
-//       title: "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
-//       description: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
-//       keywords: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
-//     };
-//   }
-// }
+    const verificationContent = gVerificationData?.data?.[0]?.url
 
-// function extractGoogleConsoleKey(googleVerification) {
-//   try {
-//     const { verificationUrl } = googleVerification ?? {};
-//     if (!verificationUrl || !verificationUrl[0]?.title) return "";
-//     const metaTagContent = verificationUrl[0].title;
-//     const consoleKey = metaTagContent.split("=").pop().slice(1, -4);
-//     return consoleKey;
-//   } catch (error) {
-//     console.error('Error extracting Google console key:', error);
-//     return "";
-//   }
-// }
+    return {
+      title: title || "Prime Concrete Pumping",
+      description: description || "Prime Concrete Pumping",
+      keywords: keywords || "Prime Concrete Pumping",
+      openGraph: {
+        title: title || "Prime Concrete Pumping",
+        description: description || "Prime Concrete Pumping",
+      },
+      verification: {
+        google: verificationContent || "ABCDEFGH",
+      },
+      alternates: {
+        canonical: clientUrlWithPath,
+      },
+      robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    };
 
+  } catch (error) {
+    return {
+      title: "Home",
+      description: "Home",
+      keywords: "Home",
+    }
+  }
+}
 
-// export const metadata = {
-//   title: "Toronto Concrete Pumping Company | Prime Concrete Pumping in Toronto",
-//   description: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
-//   keywords: "Prime Concrete Pumping Toronto is your premier partner for all your concrete pump trucks & concrete pumping needs in Toronto.",
-// };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={Fontin.className}>
       <body >
-        {/* <Header /> */}
         <NewHeader/>
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId="AW-16550180504" />
     </html>
   );
 }

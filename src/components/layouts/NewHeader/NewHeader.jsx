@@ -265,7 +265,7 @@ export function NewHeader() {
         className="p-4 overflow-y-auto pb-24 !z-[1000000000000000000]"
       >
         <div className="mb-6 flex items-center justify-between">
-          <Typography variant="p" color="blue-gray">
+          <Typography variant="paragraph" color="blue-gray">
             Prime Concrete Pumping
           </Typography>
           <IconButton
